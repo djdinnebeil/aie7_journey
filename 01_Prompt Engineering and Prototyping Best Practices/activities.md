@@ -1,10 +1,8 @@
 # Session 1 – Vibe Check: Activity #1 & Discussion
 
-## Instructions
-For each of the following prompts:
-- Identify what aspect of the LLM’s performance is being tested.
-- Evaluate how well your system responded using your deployed app (with optional Developer Message).
-- Include any observations about strengths, weaknesses, or anomalies.
+## Introduction
+
+This document summarizes my "vibe check" evaluation for Session 1 of the AI Makerspace Engineering Bootcamp. I tested my deployed LLM-powered chat application using the required prompts, evaluating each for clarity, accuracy, and overall system performance.
 
 ---
 
@@ -17,22 +15,24 @@ Explain the concept of object-oriented programming in simple terms to a complete
 Clarity / Focus / Conceptual Simplification
 
 **System Performance Evaluation**:  
-The system provided a clear and concise response. The response was longer and more thorough when a role of expert programmer was selected vs. the role of a helpful assistant.
+The system provided a clear and concise response, suitable for a complete beginner. Notably, responses were longer and more thorough when selecting the `expert programmer` developer message versus a generic `helpful assistant`.  
+**Strengths:** Clarity and structure.  
+**Weaknesses:** The length may be too much for some absolute beginners.
 
 ---
 
 ### 🔹 Question 2
 
 **Prompt**:  
-Read the following essay and provide a concise summary of the key points.  
+Read the following essay and provide a concise summary of the key points.
 
 **Aspect Tested**:  
 Conceptual Accuracy / Summarization / Comprehension
 
 **System Performance Evaluation**:  
-The system was prompted to provide a summary of the key points of an essay focused on Declarationism. The system was able to capture the important points and did not leave anything out.
-
-The system was prompted again with the same essay, except now to provide a concise summary. The system was again able to capture the important points and did not leave anything out.
+The system accurately summarized the essay's main points without omitting any crucial details. When prompted again for an even more concise summary, the system delivered as expected.  
+**Strengths:** Consistency in capturing key points.  
+**Weaknesses:** Could occasionally be more concise.
 
 ---
 
@@ -45,7 +45,9 @@ Write a short, straightforward post for the role of biomathematics apprenticeshi
 Coherence / Tone / Precision
 
 **System Performance Evaluation**:  
-At first, the system's performance was only satisfactory. When greater context was provided, the system was precise and had a straightforward tone. 
+Initially, the system's performance was only satisfactory. With additional context and a more tailored developer message, the tone and precision improved noticeably.  
+**Strengths:** Adaptability with more context.  
+**Weaknesses:** Initial vagueness.
 
 ---
 
@@ -58,20 +60,24 @@ If a store sells apples in packs of 4 and oranges in packs of 3, how many packs 
 Reasoning / Non-solution / Chain-of-Thought
 
 **System Performance Evaluation**:  
-The prompt given was a problem with no valid solution. The system was able to correctly identify that there is no solution, and even offered suggestions on how to move forward, like if there are more details.
+The prompt was a trick problem with no valid solution. The system correctly identified this, explained why, and suggested asking for clarification or more details.  
+**Strengths:** Strong reasoning and error handling.  
+**Weaknesses:** None observed in this case.
 
 ---
 
 ### 🔹 Question 5
 
 **Prompt**:  
-Rewrite the Zen of Python in a professional, formal tone.  
+Rewrite the Zen of Python in a professional, formal tone.
 
 **Aspect Tested**:  
 Style-guide Adherence / Tone Conversion
 
 **System Performance Evaluation**:  
-The Zen of Python was successfully rewritten in a formal and clear tone. The flow was solid and each point was covered.
+The system converted the Zen of Python to a formal style, maintaining clarity and flow throughout.  
+**Strengths:** Faithfulness to original content and clear conversion.  
+**Weaknesses:** Minor risk of losing the original’s poetic tone.
 
 ---
 
@@ -81,12 +87,16 @@ The Zen of Python was successfully rewritten in a formal and clear tone. The flo
 What are some limitations of vibe checking as an evaluation tool?
 
 **Answer**:  
-Here is a definition of 'vibe checking' from AI Makerspace: 
-'Vibe checking' is an informal term for cursory unstructured and non-comprehensive evaluation of LLM-powered systems. The idea is to loosely evaluate our system to cover significant and crucial functions where failure would be immediately noticeable and severe.
+'Vibe checking' is an informal, unstructured, and non-comprehensive evaluation of LLM-powered systems, meant to quickly spot obvious failures. Its limitations include:
+- Subjectivity
+- Lack of reproducibility
+- No quantitative metrics
+- Only surface-level coverage
 
-One of the biggest limitations of vibe checking is from its informal and unstructured nature. As an evaluation tool, additional weaknesses include:
-- subjectivity
-- lack of reproducibility
-- no quantitative metrics
-- surface-level coverage
+For more robust evaluation, a combination of vibe checks and formal, quantitative methods is needed.
 
+---
+
+## Conclusion
+
+This vibe check provided an initial baseline for my application. Going forward, I plan to incorporate more targeted developer prompts, add automated testing for edge cases, and collect user feedback for deeper evaluation.
