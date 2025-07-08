@@ -91,6 +91,56 @@ graph.add_conditional_edges("generate", validate_facts, {
 
 Include a screenshot of your trace and explain what it means.
 
+![RAG Trace](images/rag_trace.png)
+
+### 🧭 RAG Trace Overview – LangSmith
+
+**🟢 Question:**  
+“What is the maximum loan amount I can get from the government to go to school these days?”
+
+---
+
+### 🔄 Flow Breakdown
+
+1. **LangGraph Chain Executed**  
+   - Tag: `Demo Run`  
+   - Duration: **1.80s total**  
+   - Total Tokens: **3,405**
+
+2. **🧩 Step 1: `retrieve` node**  
+   - Uses a `VectorStoreRetriever`  
+   - Latency: **0.23s**  
+   - Retrieved **4 context documents** relevant to student loan limits
+
+3. **🧩 Step 2: `generate` node**  
+   - Components:
+     - `ChatPromptTemplate` — formats the prompt  
+     - `ChatOpenAI (gpt-4.1-nano)` — generates response  
+     - `StrOutputParser` — parses the string output  
+   - Latency: **1.56s**
+
+---
+
+### 📝 Output Summary
+
+**Context (Retrieved Docs):**  
+Loan-related documents, including:
+- Loan limits by degree level  
+- Program eligibility rules  
+- Aggregate loan tables
+
+**Final Response:**  
+Clearly states loan limits by borrower type (e.g., $5,500 for dependent undergrads, $138,500 max for graduate students).
+
+---
+
+### ✅ Status:
+- **Success**  
+- **Latency acceptable (1.8s)**  
+- Prompt grounded in context  
+- Tagged for observability: `Demo Run`
+
+
 ##### 🏗️ Activity #2:
 
 Complete the prompt so that your RAG application answers queries based on the context provided, but *does not* answer queries if the context is unrelated to the query.
