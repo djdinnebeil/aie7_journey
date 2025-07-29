@@ -1,0 +1,800 @@
+{
+  "name": "Parent-Document",
+  "summary": {
+    "total_runtime": 71.44,
+    "avg_latency": 6.49,
+    "total_tokens": 32814,
+    "total_queries": 11,
+    "total_cost": 0.004018,
+    "avg_tokens_per_query": 2983.09
+  },
+  "latencies": [
+    4.69,
+    3.39,
+    3.53,
+    3.59,
+    2.34,
+    16.05,
+    6.89,
+    6.15,
+    7.38,
+    8.61,
+    8.81
+  ],
+  "evaluation_result": {
+    "context_recall": 1.0,
+    "faithfulness": 0.9813,
+    "factual_correctness(mode=f1)": 0.7855,
+    "answer_relevancy": 0.8622,
+    "context_entity_recall": 0.3666,
+    "noise_sensitivity(mode=relevant)": 0.2921
+  },
+  "evaluation_cost": {
+    "eval_model": "gpt-4.1-nano",
+    "eval_tokens": 412029,
+    "eval_cost": 0.065158
+  },
+  "prompt_logs_path": "loan_docs_retriever_logs/parent-document_logs.json",
+  "prompt_logs": [
+    {
+      "prompt_number": 1,
+      "question": "What changes did the Consolidated Appropriations Act, 2021 bring to the FAFSA process?",
+      "response": "The Consolidated Appropriations Act, 2021, through the FAFSA Simplification Act, brought significant changes to the FAFSA process, including:\n\n1. Implementation of the FAFSA Simplification Act alongside the FUTURE Act to streamline the FAFSA application process.\n2. Introduction of the FUTURE Act Direct Data Exchange (FA-DDX) with the IRS, replacing the previous IRS Data Retrieval Tool (DRT). The FA-DDX automates the transfer of income and tax information from the IRS to the FAFSA form, reducing the need for applicants and their families to self-report this information.\n3. The transferred federal tax information (FTI) via the FA-DDX is considered verified for Title IV purposes.\n4. Applicants and contributors must provide consent and approval for the Department to obtain and use their IRS tax information through the FA-DDX.\n5. Updates to the FAFSA application and verification processes, including date updates, resource links, and the removal of references to COVID-19 guidance and waivers.\n6. Changes in the application process included the movement of certain sections to improve the narrative flow and the deferred renewal functionality for FAFSA filings.\n\nThese changes aimed to simplify and improve the accuracy of the FAFSA application process by reducing the burden on applicants to input income data manually.",
+      "token_usage": {
+        "completion_tokens": 252,
+        "prompt_tokens": 1071,
+        "total_tokens": 1323
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Application and Verification Guide\nIntroduction\nThis guide is intended for college financial aid administrators and counselors who help students with the financial aid\nprocess4completing the Free Application for Federal Student Aid (FAFSA®) form, verifying information, and making\ncorrections and other changes to the information reported on the FAFSA form.\nThroughout the Federal Student Aid Handbook, we use <college,= <school,= and <institution= interchangeably unless a\nmore specific use is given. Similarly, <student,= <applicant,= and <aid recipient= are synonyms. <Parents= in this volume\nrefers to the legal parents of dependent students, and <you= refers to the primary audience of the Handbook: financial aid\nadministrators at colleges. <We= indicates the U.S. Department of Education (the Department, ED), and <federal student\naid= and <Title IV aid= are synonymous terms for the financial aid offered by the Department.\nWe appreciate any comments that you have on the Application and Verification Guide (AVG), as well as all the volumes of\nthe FSA Handbook. We revise the text based on questions and feedback from the financial aid community, so please\nreach out to us about how to improve the FSA Handbook through the <Contact Customer Support= feature in our Partner\nConnect Help Center clicking on <FSA Handbook= under the Topic section.\nFAFSA Simplification Act\nThe FAFSA Simplification Act, passed on Dec. 27, 2020, as part of the Consolidated Appropriations Act, 2021, mandated a\nsignificant overhaul of federal student aid, including the Free Application for Federal Student Aid (FAFSA®) form, need\nanalysis, and many policies and procedures for schools that participate in the Title IV programs. FSA implemented the\nFAFSA Simplification Act alongside the FAFSA portion of the Fostering Undergraduate Talent by Unlocking Resources for\nEducation (FUTURE) Act to streamline the FAFSA application process.\nChanges From the FUTURE Act\nThe Fostering Undergraduate Talent by Unlocking Resources for Education (FUTURE) Act authorized a direct data\nexchange 3 the FUTURE Act Direct Data Exchange (FA-DDX) 3 with the Internal Revenue Service (IRS) to facilitate\ncompleting the FAFSA form. The previous tool to transfer U.S. income and tax information from the IRS 3 the IRS Data\nRetrieval Tool (DRT) 3 was retired after the close of the 2023-24 application cycle. Implementation of the FA-DDX\neliminated the need for most applicants (and their spouse or parents) to self-report their income and tax information\nreported to the IRS. Also, federal tax information (FTI) that is transferred via the FA-DDX to the FAFSA form is considered\nverified for Title IV purposes.\nUnlike with the IRS-DRT, which allowed applicants to opt in, the FA-DDX requires applicants and contributors (student9s\nspouse and/or parents, as appropriate) to provide consent and approval for the Department to obtain FTI from the IRS via\nthe FA-DDX and use it to determine the student9s eligibility for federal student aid.\nOther Changes\nThroughout the AVG, all dates, pertinent tax return and schedule information, along with various resources and references\nhave been updated to support the requirements associated with the 2025-26 processing year and the 2023 base tax year.\nWhere appropriate, links and publications associated with FSA9s Partner Connect and Knowledge Center have been\nproperly updated. We also removed references to COVID-19 guidance and waivers.\nSome sections were moved to better align topics and assist with narrative flow. Use the search feature to find sections\nthat may have been relocated. The following describes changes made in each chapter.\nChapter 1: The Application Process\nWe removed the <Returning FAFSA Filers= section as FAFSA renewal functionality has been deferred for future cycles."
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 0
+        }
+      ],
+      "latency": 4.69,
+      "tokens": 1323,
+      "cost": 0.000208,
+      "timestamp": "2025-07-29 16:33:08"
+    },
+    {
+      "prompt_number": 2,
+      "question": "Wht is the purpose of the FAFSA Submission Summary in the financial aid process?",
+      "response": "The purpose of the FAFSA Submission Summary in the financial aid process is to provide students with a record of the information they submitted on their FAFSA application, including the Student Aid Index (SAI), results of eligibility matches, aid history, and any identified inconsistencies or issues from the FAFSA processing. It helps students review and verify their submitted data, make corrections if necessary, and understand any required actions to resolve issues before aid can be disbursed. For schools, it also serves as a tool to access key application details and ensure proper processing of aid.",
+      "token_usage": {
+        "completion_tokens": 110,
+        "prompt_tokens": 2022,
+        "total_tokens": 2132
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Summary or, if the FPS has the student9s email address, an email with a link to view the student9s updated FAFSA\nSubmission Summary on the web.\nPaper FAFSA Submission Summary. Students who received a paper FAFSA Submission Summary may make\ncorrections or updates on it, then sign and return it to the FAFSA processor at the address given at the end of the FAFSA\nSubmission Summary. If a contributor9s information is updated or corrected, that contributor also must sign the FAFSA\nSubmission Summary before submitting it for processing.\nStudents who applied electronically are encouraged to return to their Dashboard on StudentAid.gov to make corrections.\nStudents who applied electronically but would like to make corrections via paper may have a paper FAFSA Submission\nSummary mailed to them by calling the FSAIC at 1-800-4-FED-AID and providing their name, SSN, and date of birth,\nthough this feature may not be available until later in the application cycle.\nAdding Schools and Changing a Student9s Address\nAs with other changes, a student can add schools or change their address, email address, or telephone number online or\non a paper FAFSA Submission Summary. A student can also update these items over the phone by calling 1-800-433-3243\nand providing their DRN, though this feature may not be available until later in the application cycle. You can submit\nthose changes for the student through the FAFSA Partner Portal if your school is listed on the student9s application, or you\nhave the student9s DRN.\nThe FAFSA form has limited space for a student to list schools that will receive the application data: 10 schools can be\nlisted on the paper application; 20 schools can be listed on the online FAFSA form. If the student wants information sent to\nmore schools, the student can use any of the methods listed previously to replace some or all the original schools. If the\nstudent originally listed 20 schools on the application and then replaced two schools with two new ones, those that were\nreplaced will not receive an ISIR from this correction or any subsequent correction on which they did not appear.\nSignatures\nAny required signatures, such as those on worksheets or on copies of tax returns, must be collected at the time of\nverification4they cannot be collected after the verification deadline for that award year.\nFor verification documentation, a school may collect an electronic signature for an applicant, parent, or spouse if the\nprocess includes an assurance of the identity of the person signing. This is often accomplished with a PIN or password that\nis assigned only after the identity of the signer has been authenticated (see DOC-Q12 on the Program Integrity Questions\nand Answers 3 Verification).\nDeadlines and Failure to Submit Documentation\nYou must require students selected for verification4either by your school or the Department4to submit the\ndocumentation by the date specified by your school (for Campus-Based and Direct Loans) or the Department (for Pell).\nCampus-Based and Direct Loans\nIf a student doesn9t provide verification documentation within your school9s established, reasonable timeframe, you\ncannot:\nDisburse more FSEOG funds,\nEmploy or permit further FWS employment, or\nFailure to Submit Documentation\n34 CFR 668.60",
+        "The FPS also checks the application for possible inconsistencies and mistakes. For instance, if a dependent student\nreported the parents9 marital status as married but reported the family size as <2,= the edit checks would catch the\ninconsistency. Even when data is inconsistent, the FPS may be able to calculate an SAI based on assumptions. Students\nwho submit applications online will be able to correct or confirm FPS edits before submitting the application.\nOutput Documents\nAfter processing is complete, the FPS produces output documents 3 the Institutional Student Information Record (ISIR) and\nthe FAFSA Submission Summary 3 that show the information the student originally provided, the SAI, results of the\neligibility matches, information about aid history, and information about any inconsistencies identified through the FPS\nedits. If the FPS was unable to calculate an SAI, the output record will not show one. The ISIR is made available\nelectronically to the schools the student listed on the FAFSA form (or added later) and their state agency. The FAFSA\nSubmission Summary is made available to the student online or a paper FAFSA Submission Summary is mailed to the\nstudent if the student is unable to access it online. The type of output document depends on the type of record that the\napplicant submitted. Neither the online nor the paper FAFSA Submission Summary will contain FTI. See Volume 6 of the\n2025-26 FAFSA Specifications Guide for additional information.\nYou will receive an ISIR for the student only if the applicant includes your school on their FAFSA form. If your school is not\nlisted, you can request an ISIR for the student through the FAFSA Partner Portal by adding your federal school code if you\nhave the applicant9s Data Release Number (DRN), which authorizes your access to the student9s application information.\nThe DRN appears on the FAFSA Submission Summary, on the FAFSA confirmation page, and in the FAFSA confirmation\nemail.\nYou are required to receive ISIRs and to accept FAFSA Submission Summaries from students, but you cannot require\nstudents to submit FAFSA Submission Summaries to receive aid. If you don9t have an ISIR for a student, your federal\nschool code must be added to their record so that an ISIR is sent to you. We recommend making corrections electronically\nvia the online FAFSA (the student) or the FAFSA Partner Portal (the school); however, students can also use a paper FAFSA\nSubmission Summary to make corrections. If you don9t have an ISIR for a student who provided a FAFSA Submission\nSummary, you must use the FAFSA Submission Summary to package and disburse the student aid. Again, you must also\nensure that your school code is added to the student9s FPS record (see the <How to Submit Corrections and Updates=\nsection in Chapter 4).\nThe FAFSA Submission Summaries and ISIRs include comment codes and text explaining any questionable results from\nFAFSA processing. Some comment codes also have an associated C Flag, which you must resolve before paying the\nstudent aid. If a student9s FAFSA Submission Summary/ISIR contains a comment code that requires resolution, the\nunderlying issue must be resolved before any Title IV funds may be disbursed to the student. For instance, if an applicant\nhas defaulted on a federal student loan, the FAFSA Submission Summary and ISIR will note this in several places,\nincluding comments to the applicant and the NSLDS financial aid history page. In addition, if a school disburses Title IV\nfunds to a student with a comment code that requires resolution and the student withdraws before the school has\nresolved the underlying issue, any funds disbursed must be returned to ED since the funds were provided to an otherwise\nineligible student.\nFor other problems, the FAFSA Submission Summary and ISIR will show that the FAFSA form has been rejected and no SAI\nhas been calculated. The FAFSA Submission Summary will tell the applicant how to resolve the reject by correcting errors\nor providing consent and approval, signatures, or more information. A complete list of comments, C Flags, reject codes,\nand required resolutions are available in Volume 7 of the 2025-26 FAFSA Specifications Guide.\nA valid output document (ISIR or FAFSA Submission Summary) is one on which all the information reported on a student9s\nFAFSA form is accurate and complete as of the date the application is signed.\nValid Output Document\n34 CFR 668.2(b)"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 62
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 5
+        }
+      ],
+      "latency": 3.39,
+      "tokens": 2132,
+      "cost": 0.000246,
+      "timestamp": "2025-07-29 16:33:12"
+    },
+    {
+      "prompt_number": 3,
+      "question": "What information can financial aid administrators view on the ISIR?",
+      "response": "Financial aid administrators can view the following information on the ISIR:\n\n- The federal school code of the receiving school.\n- Data related to the student's federal student aid eligibility, including the Selected Assistance Index (SAI) or the results of eligibility matches.\n- Information about any inconsistencies or errors identified through FAFSA processing edits.\n- Comments, comment codes, and C Flags that indicate issues needing resolution before disbursing aid.\n- Details about the student's and required contributors' data, such as consent, approval, signatures, and information provided about the FAFSA contributors.\n- Federal Tax Information (FTI) transferred from the IRS, which includes tax year, tax filing status, Adjusted Gross Income (AGI), number of dependents and exemptions, income from work, taxes paid, educational credits, untaxed IRA distributions, IRA deductions, tax-exempt interest, untaxed pension amounts, and Schedule C net profit/loss.\n\nAdditionally, the ISIR shows the aid history, any identified discrepancies, and whether the FAFSA has been rejected or requires further action. However, it does not display the full details of other schools included on the FAFSA unless sent to state agencies or included in the FAFSA Submission Summary.\n\nPlease note that certain sensitive information, such as FTI, is protected and only accessible to authorized Department of Education personnel and approved institutions.",
+      "token_usage": {
+        "completion_tokens": 266,
+        "prompt_tokens": 4074,
+        "total_tokens": 4340
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "The ISIR will only display the federal school code of the receiving school. The information of other schools the student\nincluded on the FAFSA form will not appear except on the FAFSA Submission Summary and on ISIRs sent to state grant\nagencies. See Volume 6 of the 2025-26 FAFSA Specification Guide.\nStudent Consent, Approval, and Signature (24)\nEvery student must provide the following to be eligible for Title IV aid:\nConsent 3 The student must consent to the disclosure of certain identifying information to the IRS.\nApproval 3 The student must affirmatively approve that the U.S. Department of Education may receive, use, and\nredisclose to certain entities their federal tax information (FTI).\nSignature 3 The student9s FSA ID (account username and password) will serve as their signature on the online\nFAFSA form. Paper (PDF) FAFSA form filers will provide a physical signature on their form.\nIn addition to certifying that the data on the FAFSA form is correct, the student is also signing a statement of educational\npurpose, which is required to receive Title IV funds. Among other things, the student agrees to spend Title IV funds only\non educational expenses and affirms that they are not in default on a federal loan and do not owe a grant overpayment.\nFAFSA Submission\nStudents who do not have any other required contributors now have a complete FAFSA form. Students who complete and\nsubmit their FAFSA form online will receive an email version of their confirmation page. When the applicant9s FAFSA form\nis processed, students who provided an email address will receive an email notification of processing with instructions to\naccess their FAFSA Submission Summary. Students who do not provide an email address will receive a paper copy of their\nFAFSA Submission Summary. Applicants with additional required contributors will need these individuals to contribute to\ntheir FAFSA form, as described next.\nContributor: Student Spouse\nThis section consists of five questions related to the student9s spouse. The student9s spouse is a required contributor on\nthe FAFSA form if the student is married and did not file a 2023 tax return jointly with their current spouse.\nIf a married student is completing the FAFSA form online and the student9s spouse is identified as a required contributor,\nthe student will be prompted to enter their spouse9s identity information (name, Social Security number, date of birth, and\nemail address) to invite them to contribute to their FAFSA form. The student spouse will be notified by email that they\nhave been invited to contribute to the student9s FAFSA form. The spouse should use their own StudentAid.gov account\nusername and password to access the student9s FAFSA form and complete their portion of the form. If the student9s\nspouse is not a required contributor, the student will enter the same identifying information and email address, but the\nstudent9s spouse will not be invited to contribute to the student9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their spouse complete the student spouse\ncontributor section.\nStudent Spouse Identity Information (25)\nLike the student, the student spouse identity information should match what appears on their social security card. If the\nstudent spouse does not have a Social Security number and is completing their section of the form online, the SSN field\nwill be blank, based on their StudentAid.gov account information. If they are completing their section on the paper (PDF)\nFAFSA, they should enter all zeros in the SSN field. In both application methods, the student spouse should enter their\nITIN, if they have one, in the ITIN field.\nStudent Spouse Contact Information (26)\nThis is the student spouse9s current mobile phone, email address, and permanent home address.\nStudent Spouse Tax Filing Status (27)",
+        "Deadlines\nThe application processing cycle typically lasts 21 months, with the FAFSA form opening on October 1 in the year prior to\nthe start of the award year. For the 2025-26 application cycle, the online FAFSA opened for beta testing to a limited\npopulation of applicants on October 1, with the form expected to be available to all applicants by December 1, 2024.\nApplications will be accepted through June 30, 2026.\nThe FPS must receive a student9s online FAFSA information by June 30, 2026. A paper FAFSA form must be legible, and it\nmust be mailed to the Federal Student Aid Programs address listed on the FAFSA form in time for the processor to receive\nit by June 30, 2026. There are no exceptions to these deadlines. An online application received after June 30, 2026, will\nnot be processed.\nA paper application received before the application opens for the award year, or after June 30, 2026, will be returned\nunprocessed with a letter of explanation. If it is signed before and received after the application opens for the award year,\nit will be accepted but the student will receive a rejected FAFSA Submission Summary asking them to date and re-sign the\nFAFSA Submission Summary and return it for processing.\nFor other deadlines pertaining to corrections, changes, disbursements, and verification, see the official deadline notice for\nthe 2025-26 award year. It will provide all the processing deadline dates and will be available in the Knowledge Center\nunder <Federal Registers.= For these deadlines, the date the FPS processed the ISIR transaction is the date the institution\nreceived the ISIR. The processed date is displayed above the SAI on the first page of the FAFSA Submission Summary and\nISIR printout.\nStudents who submit the FAFSA form later in the award year can receive aid for the entire year, including completed\npayment periods, if they were not ineligible at the time. See the section on retroactive disbursements for completed\nperiods in Volume 4, Chapter 2 of the FSA Handbook.\nWebsites for students\nhttps://studentaid.gov/4Higher education portal that contains resources and information about paying for\ncollege. The site includes access to the FAFSA application, loan information, counseling, repayment, and other\ntools to help future, current, and former students access financial aid.\nhttps://studentaid.gov/fafsa4Submit a FAFSA application or make corrections to a previously submitted\napplication; get an online FAFSA Submission Summary; check status of an application.\nhttps://studentaid.gov/aid-estimator/4The Federal Student Aid Estimator can help applicants understand\ntheir options to pay for college or career school by providing an early estimate of the SAI and eligibility for federal\nstudent aid.\nhttps://studentaid.gov/fsa-id/create-account/launch4Create an account username and password, which\nallows students, FAFSA contributors, and other borrowers access to the StudentAid.gov portal.\nhttps://studentaid.gov/fafsa-apply/parents4Who counts as a parent on the FAFSA form? This tool helps\ndetermine which parent(s) should participate in a student9s FAFSA form.\nResources for schools\n2025-26 FAFSA Specifications Guide 3 This guide consolidates all FAFSA-related processing information and\nguidance into a multi-volume resource. It includes the following volumes and replaces previous stand-alone\nguides:\nVolume 1 3 Summary of Changes (PDF)\nVolume 2 3 FPS Schedule and Getting Help (PDF)\nVolume 3 3 Electronic Data Exchange and FAFSA Processing (PDF)",
+        "2. The disclosure of their FTI by the IRS to the Department;\n3. The use of their FTI by a Department official to determine an applicant9s eligibility for federal student aid and the\namount for which they are eligible; and\n4. The redisclosure of FTI by the Department to an eligible institution, state higher education agency, or a designated\nscholarship organization (e.g., institutional or state financial aid).\nOnly the Department has the authority to obtain approval and consent for the use and disclosure of FTI for such purposes.\nOur partners (FAAs, advocates, etc.) are not permitted to obtain approval and consent on behalf of FAFSA contributors\n(including parent(s) or spouse) for the use and disclosure of FTI.\nOnce a FAFSA contributor has provided consent and approval for use and disclosure of FTI for a FAFSA cycle (e.g., the\n2025-26 FAFSA cycle), they cannot revoke consent for that cycle. The ability to revoke consent is not needed for FAFSA\npurposes because the FAFSA contributor is providing a one-time consent for a specific tax year and an annual consent is\nrequired for each FAFSA cycle.\nStudents and contributors are not able to view or edit the imported FTI data. This is to enhance security, privacy, and to\nreduce the risk of the misuse of sensitive data. However, you (the financial aid administrator) will be able to see the\ntransferred data on the ISIR. Schools and other partners that receive ISIRs must protect federal student aid information\nprovided to them by the Department or otherwise obtained in support of the application, award, and administration of the\nfederal student aid programs as permitted under the IRC 6103(l)(13) and HEA, as amended. In keeping with the\nexpectation that you protect the confidentiality of data associated with the Title IV programs, you must not disclose FTI\nfrom the FAFSA form unless the disclosure and use is permitted under the IRC 6103(l)(13) and HEA 1098h. For additional\ninformation and guidance on the use of FTI, see Electronic Announcement GENERAL-23-34.\nSignatures\nEach student and required contributor must both (1) provide consent and approval to obtain tax information from the IRS\nand (2) sign the FAFSA application. While both the student and contributors must provide consent and approval once per\napplication cycle, a signature may be required multiple times throughout the cycle if a student makes corrections to a\nprocessed FAFSA form. In these cases, the student or the contributor must sign that correction to certify the information is\naccurate but will not be prompted to provide consent and approval again. Therefore, it is possible for a FAFSA transaction\nto contain consent and approval but not the required signature(s). If your school receives an ISIR transaction indicating\nthat the transaction source (i.e. paper or online FAFSA) was unsigned, the applicant or contributor can return to their\nFAFSA form and sign the correction. Alternatively, you can print a signature page in the FAFSA Partner Portal (FPP), collect\nthe necessary original signature(s), and indicate in FPP that you have the signature on file. This will resolve the signature\nrequirement but will not satisfy the requirement for consent and approval. Only the Department can collect a contributor9s\nconsent and approval.\nFederal Tax Information\nThe following data received by the Department from the IRS are considered FTI:\nTax Year (ex. Award year 2025-26 is based on 2023 tax year information from the IRS)\nTax Filing Status\nAdjusted Gross Income (AGI)\nNumber of Exemptions and Number of Dependents\nIncome Earned from Work\nTaxes Paid\nEducational Credits\nUntaxed IRA distributions\nIRA deductions and payments\nTax exempt interest\nUntaxed pension amounts\nSchedule C net profit/loss",
+        "The FPS also checks the application for possible inconsistencies and mistakes. For instance, if a dependent student\nreported the parents9 marital status as married but reported the family size as <2,= the edit checks would catch the\ninconsistency. Even when data is inconsistent, the FPS may be able to calculate an SAI based on assumptions. Students\nwho submit applications online will be able to correct or confirm FPS edits before submitting the application.\nOutput Documents\nAfter processing is complete, the FPS produces output documents 3 the Institutional Student Information Record (ISIR) and\nthe FAFSA Submission Summary 3 that show the information the student originally provided, the SAI, results of the\neligibility matches, information about aid history, and information about any inconsistencies identified through the FPS\nedits. If the FPS was unable to calculate an SAI, the output record will not show one. The ISIR is made available\nelectronically to the schools the student listed on the FAFSA form (or added later) and their state agency. The FAFSA\nSubmission Summary is made available to the student online or a paper FAFSA Submission Summary is mailed to the\nstudent if the student is unable to access it online. The type of output document depends on the type of record that the\napplicant submitted. Neither the online nor the paper FAFSA Submission Summary will contain FTI. See Volume 6 of the\n2025-26 FAFSA Specifications Guide for additional information.\nYou will receive an ISIR for the student only if the applicant includes your school on their FAFSA form. If your school is not\nlisted, you can request an ISIR for the student through the FAFSA Partner Portal by adding your federal school code if you\nhave the applicant9s Data Release Number (DRN), which authorizes your access to the student9s application information.\nThe DRN appears on the FAFSA Submission Summary, on the FAFSA confirmation page, and in the FAFSA confirmation\nemail.\nYou are required to receive ISIRs and to accept FAFSA Submission Summaries from students, but you cannot require\nstudents to submit FAFSA Submission Summaries to receive aid. If you don9t have an ISIR for a student, your federal\nschool code must be added to their record so that an ISIR is sent to you. We recommend making corrections electronically\nvia the online FAFSA (the student) or the FAFSA Partner Portal (the school); however, students can also use a paper FAFSA\nSubmission Summary to make corrections. If you don9t have an ISIR for a student who provided a FAFSA Submission\nSummary, you must use the FAFSA Submission Summary to package and disburse the student aid. Again, you must also\nensure that your school code is added to the student9s FPS record (see the <How to Submit Corrections and Updates=\nsection in Chapter 4).\nThe FAFSA Submission Summaries and ISIRs include comment codes and text explaining any questionable results from\nFAFSA processing. Some comment codes also have an associated C Flag, which you must resolve before paying the\nstudent aid. If a student9s FAFSA Submission Summary/ISIR contains a comment code that requires resolution, the\nunderlying issue must be resolved before any Title IV funds may be disbursed to the student. For instance, if an applicant\nhas defaulted on a federal student loan, the FAFSA Submission Summary and ISIR will note this in several places,\nincluding comments to the applicant and the NSLDS financial aid history page. In addition, if a school disburses Title IV\nfunds to a student with a comment code that requires resolution and the student withdraws before the school has\nresolved the underlying issue, any funds disbursed must be returned to ED since the funds were provided to an otherwise\nineligible student.\nFor other problems, the FAFSA Submission Summary and ISIR will show that the FAFSA form has been rejected and no SAI\nhas been calculated. The FAFSA Submission Summary will tell the applicant how to resolve the reject by correcting errors\nor providing consent and approval, signatures, or more information. A complete list of comments, C Flags, reject codes,\nand required resolutions are available in Volume 7 of the 2025-26 FAFSA Specifications Guide.\nA valid output document (ISIR or FAFSA Submission Summary) is one on which all the information reported on a student9s\nFAFSA form is accurate and complete as of the date the application is signed.\nValid Output Document\n34 CFR 668.2(b)"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 26
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 6
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 9
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 5
+        }
+      ],
+      "latency": 3.53,
+      "tokens": 4340,
+      "cost": 0.000514,
+      "timestamp": "2025-07-29 16:33:16"
+    },
+    {
+      "prompt_number": 4,
+      "question": "What FTI mean and what info it include?",
+      "response": "FTI stands for Federal Tax Information. It includes details such as:\n\n- Tax Year (e.g., 2025-26 based on 2023 tax return)\n- Tax Filing Status\n- Adjusted Gross Income (AGI)\n- Number of Exemptions and Dependents\n- Income Earned from Work\n- Taxes Paid\n- Educational Credits\n- Untaxed IRA distributions\n- IRA deductions and payments\n- Tax-exempt interest\n- Untaxed pension amounts\n- Schedule C net profit/loss\n\nThis information is used to determine a student's eligibility for federal financial aid, and its access is subject to consent and approval by the applicant and contributors.",
+      "token_usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 3981,
+        "total_tokens": 4115
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Chapter 2\nFilling Out the FAFSA Form\nThis chapter describes the 2025-26 FAFSA form. While the chapter follows the organization of the paper (PDF) FAFSA form\nand the ISIR, the guidance applies equally to the online FAFSA. To see how FAFSA data are used to calculate the Student\nAid Index (SAI), refer to Chapter 3.\nThe easiest, fastest, and most accurate way to complete a FAFSA form is using the online application and providing\nconsent and approval for the access, disclosure, and use of federal tax information (FTI). The online FAFSA form provides\nrobust instructions for completing the form. It also provides a clear path for the student and each contributor, allowing\nthem to skip (or never see) questions that are unnecessary, irrelevant, or already known based on information previously\nprovided or imported. However, some applicants will be unable or unwilling to complete the FAFSA form online and have\nthe option to complete a paper version of the form.\nFUTURE Act Direct Data Exchange (FA-DDX)\nThe FUTURE Act amended Section 6103 of the Internal Revenue Code (IRC) to allow the Internal Revenue Service (IRS) to\ndisclose certain FTI to FSA. The IRS and FSA worked together to develop the FUTURE Act Direct Data Exchange (FA-DDX)\nwhich established a secure connection between both agencies through an application programming interface that\nprocesses requests in near-real time. The FA-DDX replaced the IRS Data Retrieval Tool (IRS-DRT) to import certain FTI into\nan applicant9s FAFSA form.\nConsent and Approval\nThe student and each contributor to the FAFSA form must provide consent and approval to the access, disclosure, and use\nof FTI in evaluating the applicant9s eligibility for Title IV aid. Consent and approval are required regardless of the\napplication method (online or paper).\nTo provide consent and approval, FAFSA contributors (including parent(s) or spouse) must agree to:\n1. The Department9s use and disclosure of their information (e.g., name and Social Security number) to match with the\nIRS;\nDefinitions\nFAFSA Privacy Act Consent 3 Formal consent provided by an applicant and any applicable contributor(s) for a\ngiven FAFSA cycle (e.g., December 2024 to September 2026 for the 2025-26 FAFSA form) that meets the\nstatutory requirements of collecting and using an individual9s personally-identifiable information (PII) under the\nPrivacy Act, as amended (5 U.S.C. § 552a). PII provided on the FAFSA form (e.g., name, date of birth, Social\nSecurity number) with consent of the individual, will be provided to the IRS to conduct a match for the\nDepartment to receive FTI for purposes of determining an applicant9s federal financial aid eligibility and permit\nfurther redisclosure of FTI by the Department.\nFAFSA FTI Approval 3 Formal approval granted by an applicant and any applicable contributors for a given\nFAFSA cycle (e.g., December 2024 to September 2026 for the 2025-26 FAFSA form) to retrieve and use FTI to\ndetermine an applicant9s federal financial aid eligibility as well as permit the redisclosure of FTI by the\nDepartment to an eligible institution; state higher education agency; or a designated scholarship organization for\nthe application, award, and administration of student aid programs. An applicant and contributor (if applicable)\nmust provide approval once each year. If FAFSA FTI approval is not provided, the student will not be eligible for\nany Title IV aid until the approval is provided by each contributor.",
+        "Verification Following Disasters\nThe Dear Colleague Letter GEN-17-08 gives general guidance for awarding aid in federally declared disasters. It states\nthat the Secretary will not enforce the verification requirements during the award year for applicants whose records were\nlost or destroyed because of a disaster if the school has tried to preserve and reconstruct any records. The school must\ndocument when it does not perform verification for this reason and use status code <S= when reporting the disbursement\nof Pell Grants to affected students. Also, the requirement for dependent students to submit a statement signed by a\nparent regarding family size is waived if the parents cannot provide the signature due to the disaster. The school must\nnote why no parent was able to provide the statement.\nSchools that experience a local disaster (rather than a federally declared one) that affects Title IV administration should\nconsult their regional school participation division.\nAcceptable Documentation\nThe FAFSA Simplification Act requires that, wherever possible, the Department use data received directly from the IRS to\ncalculate a student9s SAI and Pell Grant award. The Fostering Undergraduate Talent by Unlocking Resources for Education\nAct (FUTURE Act) requires the Department of Education to access tax information held by the IRS pertaining to FAFSA\napplicants4and, where applicable, their parents and spouses4through a secure method: the FUTURE Act Direct Data\nExchange (FA-DDX). The FUTURE Act amended the Internal Revenue Code (IRC) to mandate the disclosure of FTI directly\nfrom the IRS to the Department with an individual9s consent and approval. The FUTURE Act also made providing consent\nand approval for the exchange of FTI a requirement for receiving federal student aid.\nApplicants and contributors will be required to provide consent and approval to retrieve FTI directly from the IRS. When\nFTI is received from the IRS via the FA-DDX, the FTI received is considered verified and no additional documentation is\nnecessary. As a result, the FA-DDX is the fastest, easiest, and most secure method of meeting income and tax verification\nrequirements. The September 4, 2024 Federal Register Notice gives the documentation required for verifying 2025-26\napplication data, which depends on the item verified, as explained in this section.\nIf you use a verification document, be sure that it is signed, that all required sections are completed, and that any\nrelevant tax or alternative documents are attached. Copies of original documents are acceptable. An original signature on\nan original document, an original signature on a copy of a document, and a copy of a document with an original signature\non it are all valid signatures, unless specifically noted in this chapter. If a copy of the tax return is used, the filer (or at\nleast one of the filers of a joint return) must sign it or the tax preparer must provide their name and SSN, EIN, or PTIN.\nSuggested Verification Text\nThe Department has developed suggested text that you may use to create a verification document and to verify non-tax\nitems, such as family size. To review the suggested text for 2025-26, please see Dear Colleague Letter GEN-24-10. The\nsuggested text fulfills verification requirements, but schools do not have to use it, except as noted below. Instead, they\nmay develop and use their own (or someone else9s) text, forms, documents, statements, and certifications that are\nspecific to the items required to be verified for a particular student or group of students at the school. However, schools\nthey tried to locate their estranged spouse. The school determines that the student doesn9t need to verify their\nspouse9s tax and income information. However, the student must still verify their own information. The school\nmay also choose to use professional judgment to remove the spouse9s information from the student9s FAFSA form.\nVerification Exclusions\n34 CFR 668.54(b)",
+        "2. The disclosure of their FTI by the IRS to the Department;\n3. The use of their FTI by a Department official to determine an applicant9s eligibility for federal student aid and the\namount for which they are eligible; and\n4. The redisclosure of FTI by the Department to an eligible institution, state higher education agency, or a designated\nscholarship organization (e.g., institutional or state financial aid).\nOnly the Department has the authority to obtain approval and consent for the use and disclosure of FTI for such purposes.\nOur partners (FAAs, advocates, etc.) are not permitted to obtain approval and consent on behalf of FAFSA contributors\n(including parent(s) or spouse) for the use and disclosure of FTI.\nOnce a FAFSA contributor has provided consent and approval for use and disclosure of FTI for a FAFSA cycle (e.g., the\n2025-26 FAFSA cycle), they cannot revoke consent for that cycle. The ability to revoke consent is not needed for FAFSA\npurposes because the FAFSA contributor is providing a one-time consent for a specific tax year and an annual consent is\nrequired for each FAFSA cycle.\nStudents and contributors are not able to view or edit the imported FTI data. This is to enhance security, privacy, and to\nreduce the risk of the misuse of sensitive data. However, you (the financial aid administrator) will be able to see the\ntransferred data on the ISIR. Schools and other partners that receive ISIRs must protect federal student aid information\nprovided to them by the Department or otherwise obtained in support of the application, award, and administration of the\nfederal student aid programs as permitted under the IRC 6103(l)(13) and HEA, as amended. In keeping with the\nexpectation that you protect the confidentiality of data associated with the Title IV programs, you must not disclose FTI\nfrom the FAFSA form unless the disclosure and use is permitted under the IRC 6103(l)(13) and HEA 1098h. For additional\ninformation and guidance on the use of FTI, see Electronic Announcement GENERAL-23-34.\nSignatures\nEach student and required contributor must both (1) provide consent and approval to obtain tax information from the IRS\nand (2) sign the FAFSA application. While both the student and contributors must provide consent and approval once per\napplication cycle, a signature may be required multiple times throughout the cycle if a student makes corrections to a\nprocessed FAFSA form. In these cases, the student or the contributor must sign that correction to certify the information is\naccurate but will not be prompted to provide consent and approval again. Therefore, it is possible for a FAFSA transaction\nto contain consent and approval but not the required signature(s). If your school receives an ISIR transaction indicating\nthat the transaction source (i.e. paper or online FAFSA) was unsigned, the applicant or contributor can return to their\nFAFSA form and sign the correction. Alternatively, you can print a signature page in the FAFSA Partner Portal (FPP), collect\nthe necessary original signature(s), and indicate in FPP that you have the signature on file. This will resolve the signature\nrequirement but will not satisfy the requirement for consent and approval. Only the Department can collect a contributor9s\nconsent and approval.\nFederal Tax Information\nThe following data received by the Department from the IRS are considered FTI:\nTax Year (ex. Award year 2025-26 is based on 2023 tax year information from the IRS)\nTax Filing Status\nAdjusted Gross Income (AGI)\nNumber of Exemptions and Number of Dependents\nIncome Earned from Work\nTaxes Paid\nEducational Credits\nUntaxed IRA distributions\nIRA deductions and payments\nTax exempt interest\nUntaxed pension amounts\nSchedule C net profit/loss",
+        "equal the tax filer(s) plus dependents) claimed on an individual9s tax return. Individuals who complete the FAFSA form\nonline, provide the required consent and approval to retrieve and use IRS FTI, and have their tax data successfully\ntransferred via the FA-DDX will not be asked to report the size of their family as their family size will be derived from that\nFTI. Instead, these individuals will be asked if their family size is different from the number of individuals claimed on their\ntax return. If they indicate there was a change, they will be asked to manually report their number of dependents in a\nfollow-up question.\nOn the paper (PDF) FAFSA form, family size appears in both the student and parent contributor sections. Dependent\nstudents are instructed to skip Question 9 on the paper (PDF) FAFSA form. Dependent students completing the online\nFAFSA form will not see the family size question in the student section.\nThe following persons are included in the family size of an independent student:\nThe student and their spouse, unless the spouse has died or is not living in the household due to separation or\ndivorce.\nThe student9s dependent children, if they live with the student (or live apart from the student due to a qualifying\ntemporary absence under IRS code, such as living apart due to college enrollment) and will receive more than half of\ntheir support from the student (and spouse) from July 1, 2025, through June 30, 2026. Unborn children should not be\nincluded in the family size, though the family size can be updated if the child is born and will receive more than half\nof their support from the student (and spouse) during the award year.\nOther persons, who live with and receive more than half their support from the student and will receive more than\nhalf support for the entire award year. For FAFSA forms submitted after the start of the year, see the relevant\nparagraph and example about legal dependents provided earlier in this chapter under the <Children and Legal\nDependents= section.\nNumber in College (10)\nWhile number in college is no longer used to calculate a student9s SAI, the FAFSA Simplification Act requires the question\nto be included on the FAFSA form. Schools can use the information provided to perform a special circumstance adjustment\nfor a student. See <Professional Judgment= in Chapter 5 of this volume for additional information.\nThe student is always included in the number in college. Also included are those in the family size who are or will be\nenrolled at least half time during the award year in a degree or certificate program at a Title IV-eligible school.\nStudent Demographic Information (11) and Student Race and Ethnicity (12)\nThese questions collect sex/gender and race/ethnicity information about the student. The answers to these questions will\nnot affect the student9s eligibility for federal student aid, be used in any calculations, or be shared with the schools to\nwhich the student applies. They will be used for research purposes only.\nStudent Citizenship (13)\nFamily Size Example\nAVG, Chapter 2, Example 8: A married student recently separated from their spouse, and they are no longer\nliving together. They have a child together who is currently living with the student9s spouse. The student is paying\nchild support to the spouse, but it isn9t enough to provide more than half the child9s support. The spouse and child\ncannot be included in the student9s family size, even though the student and spouse are not yet legally divorced.\nHowever, the student9s nephew lives with the student and receives more than half of their support from the\nstudent (and will do so for the award year). The student can count the nephew in their family size, which is two.\nThe nephew, who recently turned 24, is an independent student on his own FAFSA form and his household size is\none."
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 8
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 48
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 9
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 18
+        }
+      ],
+      "latency": 3.59,
+      "tokens": 4115,
+      "cost": 0.000452,
+      "timestamp": "2025-07-29 16:33:19"
+    },
+    {
+      "prompt_number": 5,
+      "question": "Wut shud a student do if they need to contact the FSAIC to sync their data with the SSA?",
+      "response": "If a student needs to contact the FSAIC to sync their data with the SSA, they should inform the FSAIC that they have received confirmation from the SSA that their records have been corrected. Then, they should ask the FSAIC to manually synchronize their data with the SSA. Alternatively, the student can notify the school that they have obtained confirmation from SSA, and the school's Federal Aid Administrator (FAA) can update the Resend to Matches field to <Y= in the FAFSA Partner Portal and submit it as a correction for reprocessing with SSA.",
+      "token_usage": {
+        "completion_tokens": 113,
+        "prompt_tokens": 2250,
+        "total_tokens": 2363
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Because the Department matches the student9s name and SSN with the Social Security Administration (SSA), the name on\nthe FAFSA form should match the one in the SSA9s records (i.e., as it appears on the student9s Social Security card).\nStudents (except citizens of one of the Freely Associated States 3 see <Account Username and Password= in Chapter 1)\nmust have an SSN to apply for federal student aid. If they submit a paper (PDF) FAFSA form without an SSN, the FAFSA\nform will be returned unprocessed. Students will be unable to submit a FAFSA form electronically without an account\nusername and password, which requires an SSN (except students who are citizens one of the Freely Associated States).\nThe student must contact the local SSA office to get an SSN or to find out what the number is if they lost their Social\nSecurity card. Go to https://www.ssa.gov/number-card for more information.\nIf the student9s name, date of birth, or SSN does not match with the Social Security Administration, the student typically\nneeds to resolve the issue with the SSA. If the information submitted is correct, the student must contact SSA to update\nits records. After the student receives confirmation that SSA has corrected its records, the student must contact the\nFederal Student Aid Information Center (FSAIC) and ask them to manually sync their data with SSA. Alternatively, if the\nstudent notifies the school that they received confirmation from SSA, the FAA may update the Resend to Matches field to\n<Y= in the FAFSA Partner Portal and submit it as a correction so the transaction can go back to SSA for an updated match\nflag. Records sent for rematching will continue to receive this match flag until SSA updates its database.\nStudents who enter their name, date of birth, or SSN incorrectly should log in to StudentAid.gov and update their\ninformation in Account Settings. The record will be resent to SSA for matching. Once SSA verifies the account, the\nstudent should update their FAFSA form by submitting a correction.\nStudent Contact Information (2)\nThis is the student9s current mobile phone, email address, and permanent home address, with three exceptions:\nStudents under the age of 13 should not provide an email address as FSA cannot communicate with them\nelectronically. See <FAFSA Filers Under the Age of 13= in Chapter 1 for additional information.\nIncarcerated students should use an address where they can reliably receive mail. This may be the physical address\nof the facility they are in, the address of the school (if permitted by the school), or a central processing facility used\nby the facility for mail distribution. If a prison ID number is required by the facility for the applicant to receive mail,\nthe applicant should list that at the end of the address field. If an incarcerated student is released, they should also\nupdate their address in their StudentAid.gov account or on their FAFSA Submission Summary.\nHomeless students should use a mailing address where they can reliably receive mail. That can be the address of a\nrelative or friend who has given them permission to use it, or it can be their school9s address if they have contacted\nthe school for permission and instructions on how mail they receive at the school will reach them. As soon as\nhomeless students have more permanent housing, they should update their address in their StudentAid.gov account\nor on their FAFSA Submission Summary.\nIf the student provides an email address, they should get an email with a link to their online FAFSA Submission Summary\nwithin one to three days after the FPS receives the completed application. The Department will also use this email address\nto correspond with the student regarding their application.\nStudent Current Marital Status (3)\nThis is marital status <as of today= 3 the day the application is signed. Marital status cannot be projected. It can be\nupdated in limited circumstances; see Chapter 4.\nA student who is only engaged should select <single (never married)= unless they wait until after their marriage date to\ncomplete the FAFSA form. A student in a relationship that meets the criteria for common-law marriage in their state of\nlegal residence should select <married= and will be considered independent. A student who is separated from their spouse\nshould select <separated= and will be considered a dependent student for FAFSA purposes, unless they meet other criteria\nto be considered an independent student.\nStudent College or Career School Plans (4)\nStudents should answer this question based on the degree or certificate program they will be working on at the start of",
+        "electronically due to limitations on access to computers and the internet. These applicants can complete a paper (PDF)\nFAFSA form designated specifically for incarcerated applicants, available on the Prison Education Programs resource page\nof the FSA Knowledge Center.\nThe mailing address for the Incarcerated Applicant FAFSA form is printed on the first page of the form under <Mail Your\nFAFSA® Form=. The address changes annually and differs from the general FAFSA form mailing address, so use the\naddress printed on the associated year9s Incarcerated Applicant FAFSA form. You must mail all fillable pages of the form\n(pages 7-20), including pages that are left blank because they do not apply to the applicant. Extra postage will be\nrequired due to the size and/or weight of the mailing.\nFAFSA Partner Portal\nThe FAFSA Partner Portal (FPP) replaced FAA Access to CPS Online beginning with the 2024-25 award year. FSA\ndecommissioned the FAA Access site after the 2023324 application cycle closed.\nThe FAFSA Partner Portal removed the ability for a financial aid administrator (FAA) to initiate a new application on behalf\nof a student. This is due to the requirement in the FUTURE Act that all FAFSA form contributors (including students,\nspouses, and parents) must provide their consent to disclose information to the Internal Revenue Service (IRS) and\napproval to retrieve and use certain Federal Tax Information (FTI). FAAs cannot provide consent and approval on behalf of\nany other person. Therefore, you will not be able to use the FPP to start and submit a new FAFSA form on an applicant9s\nbehalf. However, you can make certain corrections or updates.\nTranslation Assistance\nThe FAFSA form is available in English and Spanish. If you need assistance completing the form in English or Spanish\ncontact the FSAIC at 1-800-433-3243. Translation assistance in additional languages is available by calling 1-833-610-\n2590 and pressing <7= to request a specific language.\nAccount Username and Password (FSA ID)\nThe account username and password, also known as the FSA ID, is used to access a person9s StudentAid.gov account. It\nserves as an electronic signature and a digital identifier to allow access to various ED systems and services for students,\nspouses of students, parents, or spouses/partners of parents. Therefore, each individual must create their own account\nand should not share their login credentials with anyone, including FAAs. Users can create an account online at\nStudentAid.gov quickly and securely. See Electronic Announcement GENERAL-23-123 for additional information on\ncreating a StudentAid.gov account for individuals without a Social Security number.\nEach person who provides data in the online FAFSA form must have an account username and password to access the\nform. In the past, a Social Security number (SSN) was required to create a StudentAid.gov account. Starting with the\n2024325 award year, all individuals4even those without an SSN4can create a StudentAid.gov account. Persons with an\nSSN will still have their information verified by the Social Security Administration (SSA), while those without an SSN will\nuse the TransUnion® knowledge-based identity verification process described below.\nThe account username and password are created in real-time so that the student or other contributor can use it\nimmediately to enter the FAFSA form. Pending StudentAid.gov accounts with an SSN will be sent to the SSA to be\nmatched. Only those accounts with a successful match (<SSA Match Status= value of 4 on the Institutional Student\nNote: There will be two active portals that coincide with the two open FAFSA application cycles. The links below\nare specific to the application cycle. Be sure to use the correct portal for the applicable award year.\n2024-25 FAFSA Partner Portal - https://fafsa.partnerportal.ed.gov\n2025-26 FAFSA Partner Portal - https://fafsa.partnerportal-2526.ed.gov\nIf the Department is able to consolidate to one portal in future cycles, we will provide an updated link."
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 11
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 3
+        }
+      ],
+      "latency": 2.34,
+      "tokens": 2363,
+      "cost": 0.00027,
+      "timestamp": "2025-07-29 16:33:23"
+    },
+    {
+      "prompt_number": 6,
+      "question": "How is the definition of a parent on the FAFSA relevant to the completion of the form for students with unmarried biological parents living together?",
+      "response": "The definition of a parent on the FAFSA is highly relevant for students with unmarried biological parents living together because it determines who is considered a parent for the purpose of completing the form. According to the guidance, a parent includes biological or adoptive parents, or a person the state has designated as a parent (such as when listed on a birth certificate). \n\nFor students with unmarried biological parents living together, both parents are considered as parents if they are married to each other and living together, and they both should report their information on the FAFSA. If they are unmarried and living together, both biological parents are considered parents unless one has legally adopted the student or there are other circumstances that might change dependency status.\n\nFurthermore, if the parents are unmarried and not living together, the FAFSA requires reporting by the parent who provided more than 50% of the student's financial support in the last 12 months. If support was equal, the parent with the greater income and assets is considered the parent contributor.\n\nIn summary, the definition of a parent guides who must complete and provide information on the FAFSA, especially when biological parents are living together but not married. Both biological parents living together generally are considered parents, and their financial information is typically required unless specific circumstances override this rule.",
+      "token_usage": {
+        "completion_tokens": 250,
+        "prompt_tokens": 3232,
+        "total_tokens": 3482
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "This question asks if a 2023 IRS Form 1040 or 1040-NR was (or will be) completed. It also asks about income earned in a\nforeign country or if the student spouse filed a tax return in a U.S. territory. See the <Student Tax Filing Status (19)=\nquestion for additional information.\nStudent Spouse 2023 Tax Return Information (28)\nThis information comes directly from the student spouse9s 2023 tax return. See the discussion of tax return data in the\n<Student 2023 Tax Return Information (20)= question for a list of data elements that will transfer via the FA-DDX or be\nmanually entered by the student spouse. Unlike the student, the student9s spouse will not be asked to report taxable\ncollege grants, scholarships, or AmeriCorps benefits. If the student or spouse had an amount to report, the student should\nhave reported the joint total in the student section. The spouse will also not be asked about receipt of the earned income\ntax credit (EITC). Receipt of the EITC is used to determine if the student (or parent) is a single parent. If the student (or\nparent) is married, they are not a single parent, which makes it unnecessary to ask the spouse about the EITC.\nStudent Spouse Consent, Approval, and Signature (29)\nEvery student spouse contributor must provide the following for the student to be eligible for Title IV aid:\nConsent 3 The student spouse contributor must consent to the disclosure of certain identifying information to the\nIRS.\nApproval 3 The student spouse contributor must affirmatively approve that the U.S. Department of Education may\nreceive, use, and redisclose to certain entities their federal tax information (FTI).\nSignature 3 The student spouse contributor9s FSA ID (username and password) will serve as their signature on the\nonline FAFSA. Paper (PDF) FAFSA filers will provide a physical signature on their form.\nFAFSA Submission\nMarried, independent students who did not file a 2023 tax return jointly with their current spouse now have a complete\nFAFSA ready for submission. The student will receive an email confirmation that the form was submitted. The spouse will\nsee an abbreviated confirmation that the form is complete and that the student has been notified. Applicants who provide\nan email address will receive email notification when their form is processed with instructions to access their FAFSA\nSubmission Summary. Students who do not provide an email address will receive a paper copy of their FAFSA Submission\nSummary.\nContributor: Parent\nThis section consists of 12 questions related to the parent of a dependent student.\nDependent students will always have at least one parent contributor. If the student is completing the FAFSA form online,\nthey will be prompted to enter their parent9s identity information (name, Social Security number, date of birth, and email\naddress) to invite them to contribute to their FAFSA form. The parent will be notified by email that they have been invited\nto contribute to the student9s FAFSA form. The parent should use their own StudentAid.gov account username and\npassword to access the student9s FAFSA form and complete their portion of the form. If the student9s parent is married\nand filed their 2023 taxes jointly with their current spouse, only one parent contributor is required. If the student9s parent\nis either (1) married or remarried, or (2) unmarried and living together, and did not file their 2023 taxes jointly with their\ncurrent spouse or partner, the parent9s spouse or partner will be a required contributor on the student9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their parent complete the parent section.\nWho Counts as a Parent on the FAFSA?\nIn most cases, it9s clear who the parents are. A parent is a biological or adoptive parent, or a person that the state has\ndetermined to be a parent (for example, when a state allows another person9s name to be listed as a parent on a birth\ncertificate). A stepparent is considered a parent if married to a biological or adoptive parent and if the student counts\nthem in their family size. Biological and adoptive parents who are unmarried and living together select that as their\nmarital status, and both report their information on the FAFSA form.",
+        "However, a stepparent who did not adopt the student cannot be the sole parent for determining dependency status. If one\nparent dies, the student is still a dependent of the remaining biological or adoptive parent, not the stepparent.\nIf parents are divorced or never married and not living together, the parent on the FAFSA form should be the parent who\nprovided more than 50% of the financial support for the student during the last 12 months. This may be different from the\nparent the student lived with during that same period. If one parent pays child support and/or alimony to the other parent,\nthe amount paid counts for the payer when determining which parent provided more than 50% of the student9s financial\nsupport and is a required contributor on the FAFSA form. Once the parent who provides more than 50% of the financial\nsupport for the student has been determined, that parent (and their current spouse, if applicable) should report their\nfinancial information on the student9s FAFSA form as a contributor.\nIf neither parent provided more than 50% of the financial support for the student (including when neither parent provided\nsupport for the student) during the last 12 months, the parent with the greater income and assets is a required\ncontributor on the FAFSA form. Once the parent with the greater income and assets has been determined, that parent\n(and their current spouse, if applicable) should report their financial information on the student9s FAFSA form.\nNote: It is not typical that a student will receive support from both parents exactly equally. Usually, you can determine\nthat the student received more than half support from one of the parents.\nA foster parent or a legal guardian is not treated as a parent for Title IV purposes. If at any time since the age of 13 both\nstudent9s parents were dead (and they did not have an adoptive parent at that time) or the student was in foster care,\nthey are independent. If the student is now or was when they became an adult an emancipated minor or in legal\nguardianship, the student is independent.\nIf a student is living with their grandparents or other relatives, their data should not be reported on the FAFSA form as\nparental data unless they have adopted the student.\nParent Identity Information (30)\nLike the student, the parent identity information should match what appears on their social security card. If the parent\nSurviving Parent and Stepparent Example\nAVG, Chapter 2, Example 9: A dependent student9s parents divorced when the student was five years old. The\nstudent9s mother remarried, and the student lived with her and the student9s stepfather, who did not adopt the\nstudent. The student9s mother died last year, but the student9s biological father is still living. The student does not\nmeet any of the criteria to be independent. Because the student9s biological father is the only surviving parent,\nthe student needs to report the biological father9s information on the FAFSA form, even if the student is still living\nwith and being supported by the stepfather.\nStudent Living With Relatives Example\nAVG, Chapter 2, Example 10: A student9s father is dead, and the student9s mother can9t support the student,\nso the student is living with their grandparents. The student9s mother doesn9t pay any money for the student9s\nsupport. The student doesn9t meet any of the independence criteria, so the student must provide parental\ninformation. Because the student9s grandparents haven9t adopted the student, they are not the student9s parents.\nThe student will have to provide information about their mother on the form unless there are unusual\ncircumstances that would warrant a dependency override or the student may elect to receive only unsubsidized\nloans. See Chapter 5 for additional guidance on unusual circumstances.",
+        "However, there will be instances where manual entry of tax information will be necessary.\nThis information comes directly from the 2023 federal tax return of the parent9s (and parent9s spouse if married and filed\njointly with their current spouse). See the discussion of tax return data in the <Student 2023 Tax Return Information (20)=\nquestion for a list of data elements that will transfer via the FA-DDX or be manually entered by the parent.\nAnnual Child Support Received (39)\nAnnual child support received is included as an asset of the recipient in the SAI formula. If a dependent student9s parent\n(and their spouse or partner) received child support in the last complete calendar year, they should enter the total\namount received for all children in the family size in this question.\nParent Assets (40)\nAn asset is property that the family owns and has an exchange value. The FAFSA form collects current data (as of the day\nof signing the FAFSA form) about cash, savings, and checking accounts; investments; real estate; businesses; and\ninvestment farms. See the <Student Assets (22)= question for additional discussion of assets.\nParent Consent, Approval, and Signature (41)\nEvery parent contributor must provide the following for the student to be eligible for Title IV aid:\nConsent 3 The parent contributor must consent to the disclosure of certain identifying information to the IRS.\nApproval 3 The parent contributor must affirmatively approve that the U.S. Department of Education may receive,\nuse, and redisclose to certain entities their federal tax information (FTI).\nSignature 3 The parent contributor9s FSA ID (username and password) will serve as their signature on the online\nFAFSA. Paper (PDF) FAFSA filers will provide a physical signature on their form.\nFAFSA Submission\nA dependent student with a single parent now has a complete FAFSA ready for submission. A dependent student with\nmarried parents who filed their 2023 tax return jointly with their current spouse will need to provide the parent9s spouse9s\nidentity and contact information. If all required information is provided and the FAFSA form is submitted, the student will\nreceive an email confirmation. The parent will see an abbreviated confirmation, letting them know that the form is\ncomplete and that the student has been notified. Applicants who provide an email address will receive email notification\nwhen their form is processed with instructions to access their FAFSA Submission Summary. Students who do not provide\nan email address will receive a paper copy of their FAFSA Submission Summary.\nContributor: Parent Spouse or Partner\nThis section consists of five questions related to the spouse or partner of a parent of a dependent student. If the student9s\nparent is married, the spouse9s information is always required on the FAFSA form. If the student9s parent is unmarried and\nliving with a partner, the partner9s information is only required on the FAFSA form if the partner is also the student9s legal\nparent.\nThe parent spouse or partner is only a required contributor on the FAFSA form if the parent is either (1) married or\nremarried and did not file taxes jointly with their current spouse in 2023, or (2) unmarried and living with the student9s\nother legal parent. If the parent contributor is completing the FAFSA form online and the parent9s spouse is identified as a\nrequired contributor, the parent will be prompted to enter the parent spouse9s or partner9s identity information (name,\nSocial Security number, date of birth, and email address) to invite them to contribute to the student9s FAFSA form. The\nparent spouse or partner will be notified by email that they have been invited to contribute to the student9s FAFSA form.\nThe spouse or partner should use their own StudentAid.gov account username and password to access the student9s\nFAFSA form and complete their portion of the form. If the parent9s spouse is not a required contributor, the parent will\nenter the same identifying information and email address, but the parent9s spouse will not be invited to contribute to the\nstudent9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their parent9s spouse or partner complete the"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 27
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 28
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 31
+        }
+      ],
+      "latency": 16.05,
+      "tokens": 3482,
+      "cost": 0.000423,
+      "timestamp": "2025-07-29 16:33:25"
+    },
+    {
+      "prompt_number": 7,
+      "question": "How does the FAFSA form address situations where a student's parent has a unique tax filing status, such as not filing a U.S. tax return due to foreign income or other reasons?",
+      "response": "The FAFSA form addresses situations where a parent's or student's tax filing status is unique, such as not filing a U.S. tax return due to foreign income or involvement with international organizations, by providing specific instructions:\n\n- If the parent or student did not file a U.S. tax return because they earned income in a foreign country or worked for an international organization and were not required to file, they should indicate \"No\" to the question about filing a 2023 IRS 1040 or 1040-NR. \n- They will then be asked to select the appropriate reason for not filing, such as earning foreign income or working for an international organization.\n- Since these individuals did not file U.S. taxes, they are required to manually input their income and tax information, converting foreign currency to U.S. dollars.\n- For those earning foreign income or employed abroad without having filed a foreign tax return, the FAFSA requests that they report their income and tax data manually, as the system does not link directly to foreign tax authorities.\n- Additionally, if the parent or student claims the foreign earned income exclusion, this amount is treated as untaxed income and generally does not count toward Pell Grant eligibility. However, school financial aid administrators (FAAs) may review whether this exclusion affects eligibility and can apply professional judgment to adjust the data accordingly.\n\nOverall, the FAFSA provides a pathway for individuals with non-standard tax situations to accurately report their financial information and ensures they are appropriately considered during the financial aid assessment process.",
+      "token_usage": {
+        "completion_tokens": 300,
+        "prompt_tokens": 3371,
+        "total_tokens": 3671
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Received (18)= question for a list of these federal benefits.\nParent Tax Filing Status (37)\nThis question asks if the parent filed (or will file) a 2023 IRS 1040 or 1040-NR. If the answer is <no=, the parent will be\nasked to select one of the following reasons for not filing:\n1. The parent filed or will file a tax return with Puerto Rico or another U.S. territory.\n2. The parent filed or will file a foreign tax return.\n3. The parent either earned income in a foreign country but did not and will not file a foreign tax return, or worked for\nan international organization and was not required to report income on any tax return.\n4. The parent, even though they earned income in the U.S., did not and will not file a U.S. tax return because their\nincome was below the filing threshold.\n5. The parent did not and will not file a U.S. tax return for reasons other than low income.\n6. The parent did not and will not file any tax return because they did not earn any income or they were not required to\nfile under the Internal Revenue Code.\nThe purpose of these questions is to determine if a parent was either (1) required to file a 2023 U.S. federal tax return and\ndid not or (2) has income from a foreign country that must be manually entered on the FAFSA form.\nA dependent student will be automatically eligible for a Maximum Pell Grant if their parent (and parent9s spouse or\npartner) is subject to the U.S. Tax Code but is not required to file a 2023 U.S. federal tax return. The student will be\nassigned an SAI of -1,500 and will not be required to provide any further financial information on the FAFSA form.\nFinally, married parents are asked if they filed their 2023 tax return with their current spouse. Individuals who were\nmarried and filed jointly with the IRS and are no longer married to the spouse on the applicable tax return, or who have\nmarried a different spouse, will be required to manually enter their income and tax information. See the <Joint Return\nFilers Who Are No Longer Married= section in Chapter 4 for additional information on separating tax return and income\ninformation.\nIndividuals who only file foreign tax returns will also be unable to use the FA-DDX since it does not link to foreign tax\nauthorities. They will instead need to manually input their income and tax data by converting foreign currency to U.S.\ndollars and entering the resulting amounts in the comparable fields from U.S. tax returns. See the <Student Tax Filing\nStatus (19)= question for additional information.\nIf the parent indicates they earned income in a foreign country but did not file a foreign tax return, or worked for an\ninternational organization, such as the United Nations, World Bank, or International Monetary Fund (option 3), they will\nneed to manually input their income and tax data, similar to individuals who file foreign tax returns. See <Non-tax filers,\nforeign countries, and international organizations= under <Student Tax Filing Status (19)= for additional guidance.\nIf a parent indicates they did not file a U.S. tax return for reasons other than low income (option 5), you should treat this\nas conflicting information and request documentation to resolve it, which may include requiring the individual to file a tax\nreturn and present sufficient documentation of filing to you.\nIf a parent indicates they did not file any tax return because they did not earn any income (option 6) and their state of\nlegal residence is a foreign country, you must determine if the parent has foreign untaxed income that, when included in\nthe SAI calculation, impacts a student9s Pell Grant eligibility. Comment code 303 on the student9s ISIR should prompt you\nto request additional documentation. If your inquiry into the parents9 financial situation shows that the student might be\neligible for less or no Pell grant funds, you may use PJ to account for the parents9 untaxed income and assets, similar to\nthe action you might take when there is a substantial foreign earned income exclusion on a U.S. tax return that can affect\na student9s Pell eligibility.\nParent 2023 Tax Return Information (38)\nFor U.S. tax filers, much of the information in Question 38 will be transferred directly from the IRS via the FA-DDX.",
+        "professional judgment by schools during the award years applicable to the qualifying emergency.\nThe Foreign Earned Income Exclusion, Maximum Pell Grant, and PJ\nThe amount a taxpayer claims as the foreign earned income exclusion counts as untaxed income on the FAFSA form.\nBecause this appears in untaxed income rather than the AGI, it will not be counted when determining students9 eligibility\nfor a maximum Pell Grant. As we noted in Dear Colleague Letter GEN-23-11, there will be a C flag on the ISIR that\nindicates to schools to review how the amount impacts a student9s eligibility for the maximum Pell Grant prior to awarding\naid. As we instructed in our online Q & As (SAI-Q5 and SAI-Q6) FAAs must review eligibility for applicants (and their spouse\nor parent) who reported receiving a foreign earned income exclusion and are eligible for the maximum Pell Grant award. If\nan ISIR contains both a Maximum Pell indicator flag and a valid value in the <Foreign Earned Income Exclusion= data field,\nwe will flag the ISIR for the FAA to review.\nThe FAA will determine4via manual or estimated SAI calculation4if adding the exempted foreign income to the adjusted\ngross income (AGI) would make the student ineligible to receive the maximum Pell Grant award. If that would occur, the\nFAA must determine whether it is appropriate to use PJ to account for the foreign income in determining the student9s\neligibility for the maximum Pell Grant. If the FAA decides that it is appropriate, the FAA may move the foreign earned\nincome amount from untaxed income to AGI or request additional documentation of the foreign income prior to\nperforming the adjustment. If the FAA decides to add the untaxed foreign earned income to the AGI, the FAA must check\nthe PJ flag on the ISIR before submitting the correction.\nRefusing or Reducing a Loan\nFAAs may also use their discretion to refuse or reduce Direct Loan funds if they document the reason, make the\ndetermination on a case-by-case basis, notify the student in writing, and ensure the decision is not due to discrimination\nbased on race, national origin, religion, sex, income, age, or disability.\nUnusual Circumstances\nThe FAFSA Simplification Act provides a clearer directive for FAAs to assist applicants with unusual circumstances to\nadjust dependency status on the FAFSA form to reflect students9 situations more accurately (dependency overrides). Like\nother types of professional judgments, institutions must make students aware of their ability to request an adjustment for\nForeign Earned Income Exclusion PJ Example\nAVG, Chapter 5, Example 4: A dependent student9s parent has an overseas business that earns income for\nwhich the parent claims the foreign earned income exclusion on Schedule 1 of their IRS Form 1040. The FAA\nnotices this amount on the ISIR and that the Maximum Pell indicator flag has been set, which means that the FAA\nis required to review the case. The FAA does a manual calculation of the student9s SAI with the amount of the\nexclusion included as AGI rather than as untaxed income. Because the amount is the maximum that could be\nclaimed ($120,000 for tax year 2023, transferring the amount from untaxed income to AGI makes the student\nineligible for an automatic maximum Pell Grant. The FAA decides to use PJ to move the amount of the foreign\nearned income exclusion to the parent9s AGI.\nRefusing or Reducing a Loan\n34 CFR 685.301(a)(8)",
+        "Dependent students who answer <no= to the first to parts of the question will still need to provide answers to questions\nabout their assets if their parents are required to provide financial information.\nIndependent students are automatically eligible for a Maximum Pell Grant if they (and their spouse, if married) are not\nrequired to file a 2023 federal tax return. Such students will be assigned an SAI of -1,500 and will not be required to\nprovide any further financial information on the FAFSA form.\nIndividuals who were married and filed jointly with the IRS and are no longer married to the spouse on the applicable tax\nreturn, and/or who have married a different spouse, will be required to manually enter their income and tax information.\nSee the <Joint Return Filers Who Are No Longer Married= section in Chapter 4 for additional information on separating tax\nreturn and income information.\nIndividuals who only file foreign tax returns will also be unable to use the FA-DDX since it does not link to foreign tax\nauthorities. They will instead need to manually input their income and tax data by converting foreign currency to U.S.\ndollars and entering the resulting amounts in the comparable fields from U.S. tax returns.\nPuerto Rico and Other U.S. Territory Residents\nSome individuals who reside in Puerto Rico or another U.S. territory may use an IRS Form 1040 or 1040-NR but file their\ntaxes with their local tax authority, not the IRS. These individuals should answer <No= to the question <Did or will the\nstudent file a 2023 IRS form 1040 or 1040-NR?= and <Yes= to the subsequent question to indicate they filed a tax return\nwith Puerto Rico or another U.S. territory.\nAdditionally, some individuals who live and work in Puerto Rico may file two tax returns 3 one with the IRS and one with\nthe Puerto Rico tax authority. If they are filing electronically and FTI is available via the FA-DDX, only their tax information\nfiled with the IRS will be imported to the FAFSA form. They will not be able to manually enter the information from their\ntax return filed with Puerto Rico. If the FAA is aware of this dual filing scenario, the FAA should evaluate the applicant9s\ninformation and determine if the information from the Puerto Rico tax return should replace the information imported\nfrom the IRS. FAAs who determine that the information from the Puerto Rico tax return should be on the FAFSA should\nupdate the appropriate FAFSA fields and set the <Professional Judgment= indicator. While this is not a PJ, the changes to\nthe FAFSA application system require this work-around to override the IRS-transferred FTI with the manually updated FTI.\nFSA is working on system changes for future application cycles to allow for these updates without setting the <Professional\nJudgment= indicator. See Electronic Announcement GENERAL-23-118 for additional information.\nNontax Filers, Foreign Countries, and International Organizations\nIn some countries the tax system does not operate as it does in the U.S., and people in those countries can earn a\nsubstantial amount of income and pay taxes without having to file a return. These individuals should answer <No= to the\nquestion <Did or will the student file a 2023 IRS form 1040 or 1040-NR?= and <Yes= to the subsequent question to indicate\nthey earned income in a foreign country. While these individuals did not file taxes in the U.S., they are not eligible for an\nautomatic Maximum Pell Grant and must manually enter income and tax information.\nIn some instances, employees of certain international organizations, such as the United Nations, the International\nMonetary Fund, the World Bank, and others, might not be required to file a return. These individuals should answer <No=\nto the question <Did or will the student file a 2023 IRS form 1040 or 1040-NR?= and <Yes= to the subsequent question to\nindicate they worked for an international organization. Like foreign non-filers described above, these individuals will be\nrequired to manually enter income and tax information, as they are not eligible to receive an automatic Maximum Pell\nGrant as a non-filer.\nIndividuals who earn income in a foreign country or as an employee of an international organization (e.g., World Bank,\nUnited Nations, and International Monetary Fund) and are not required to file a tax return should fill out the FAFSA form in\nthe following way using U.S. dollars:\nFor filing status, select <Single= if you9re single or <Married filing separately= if you9re married.\nFor AGI, include all wages, dividends, capital gains, business income, retirement distributions, and other income on\nwhich you may have paid taxes.\nFor income tax paid, include any income taxes you paid on income in your AGI. If your AGI only shows your net\nincome after paying taxes, enter zero for income tax paid.\nFor income earned from work, enter the income from your AGI that you earned from working at a job (e.g., your"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 30
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 68
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 21
+        }
+      ],
+      "latency": 6.89,
+      "tokens": 3671,
+      "cost": 0.000457,
+      "timestamp": "2025-07-29 16:33:41"
+    },
+    {
+      "prompt_number": 8,
+      "question": "What information must a student provide about their spouse when completing the FAFSA form, and how is this information used in the FAFSA Submission Summary?",
+      "response": "When completing the FAFSA form, a student must provide specific information about their spouse if the student is married. The required information includes:  \n- The spouse’s full name  \n- The spouse’s Social Security number (SSN). If the spouse does not have an SSN and is completing their section online, the SSN field will be blank; if using the paper form, the student should enter all zeros in this field  \n- The spouse’s date of birth  \n- The spouse’s email address  \n\nThis information is used to identify and invite the spouse to contribute to the FAFSA form, especially if the spouse is a required contributor (for example, if the student is married and did not file taxes jointly). The spouse will be notified by email and must use their own StudentAid.gov account to complete their part of the FAFSA.  \n\nOn the FAFSA Submission Summary, this spouse information appears to confirm that the details provided have been included and processed correctly. The summary provides a record of the contribution of the spouse’s data, helping ensure the FAFSA submission is complete and accurate.  \n\nIf the spouse is not a required contributor, their details are still entered, but they are not invited to contribute to the FAFSA form.  \n\nPlease note that if completing a paper FAFSA, the spouse's information should be filled out directly on the form, including their identification details.",
+      "token_usage": {
+        "completion_tokens": 269,
+        "prompt_tokens": 2120,
+        "total_tokens": 2389
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "The ISIR will only display the federal school code of the receiving school. The information of other schools the student\nincluded on the FAFSA form will not appear except on the FAFSA Submission Summary and on ISIRs sent to state grant\nagencies. See Volume 6 of the 2025-26 FAFSA Specification Guide.\nStudent Consent, Approval, and Signature (24)\nEvery student must provide the following to be eligible for Title IV aid:\nConsent 3 The student must consent to the disclosure of certain identifying information to the IRS.\nApproval 3 The student must affirmatively approve that the U.S. Department of Education may receive, use, and\nredisclose to certain entities their federal tax information (FTI).\nSignature 3 The student9s FSA ID (account username and password) will serve as their signature on the online\nFAFSA form. Paper (PDF) FAFSA form filers will provide a physical signature on their form.\nIn addition to certifying that the data on the FAFSA form is correct, the student is also signing a statement of educational\npurpose, which is required to receive Title IV funds. Among other things, the student agrees to spend Title IV funds only\non educational expenses and affirms that they are not in default on a federal loan and do not owe a grant overpayment.\nFAFSA Submission\nStudents who do not have any other required contributors now have a complete FAFSA form. Students who complete and\nsubmit their FAFSA form online will receive an email version of their confirmation page. When the applicant9s FAFSA form\nis processed, students who provided an email address will receive an email notification of processing with instructions to\naccess their FAFSA Submission Summary. Students who do not provide an email address will receive a paper copy of their\nFAFSA Submission Summary. Applicants with additional required contributors will need these individuals to contribute to\ntheir FAFSA form, as described next.\nContributor: Student Spouse\nThis section consists of five questions related to the student9s spouse. The student9s spouse is a required contributor on\nthe FAFSA form if the student is married and did not file a 2023 tax return jointly with their current spouse.\nIf a married student is completing the FAFSA form online and the student9s spouse is identified as a required contributor,\nthe student will be prompted to enter their spouse9s identity information (name, Social Security number, date of birth, and\nemail address) to invite them to contribute to their FAFSA form. The student spouse will be notified by email that they\nhave been invited to contribute to the student9s FAFSA form. The spouse should use their own StudentAid.gov account\nusername and password to access the student9s FAFSA form and complete their portion of the form. If the student9s\nspouse is not a required contributor, the student will enter the same identifying information and email address, but the\nstudent9s spouse will not be invited to contribute to the student9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their spouse complete the student spouse\ncontributor section.\nStudent Spouse Identity Information (25)\nLike the student, the student spouse identity information should match what appears on their social security card. If the\nstudent spouse does not have a Social Security number and is completing their section of the form online, the SSN field\nwill be blank, based on their StudentAid.gov account information. If they are completing their section on the paper (PDF)\nFAFSA, they should enter all zeros in the SSN field. In both application methods, the student spouse should enter their\nITIN, if they have one, in the ITIN field.\nStudent Spouse Contact Information (26)\nThis is the student spouse9s current mobile phone, email address, and permanent home address.\nStudent Spouse Tax Filing Status (27)",
+        "However, there will be instances where manual entry of tax information will be necessary.\nThis information comes directly from the 2023 federal tax return of the parent9s (and parent9s spouse if married and filed\njointly with their current spouse). See the discussion of tax return data in the <Student 2023 Tax Return Information (20)=\nquestion for a list of data elements that will transfer via the FA-DDX or be manually entered by the parent.\nAnnual Child Support Received (39)\nAnnual child support received is included as an asset of the recipient in the SAI formula. If a dependent student9s parent\n(and their spouse or partner) received child support in the last complete calendar year, they should enter the total\namount received for all children in the family size in this question.\nParent Assets (40)\nAn asset is property that the family owns and has an exchange value. The FAFSA form collects current data (as of the day\nof signing the FAFSA form) about cash, savings, and checking accounts; investments; real estate; businesses; and\ninvestment farms. See the <Student Assets (22)= question for additional discussion of assets.\nParent Consent, Approval, and Signature (41)\nEvery parent contributor must provide the following for the student to be eligible for Title IV aid:\nConsent 3 The parent contributor must consent to the disclosure of certain identifying information to the IRS.\nApproval 3 The parent contributor must affirmatively approve that the U.S. Department of Education may receive,\nuse, and redisclose to certain entities their federal tax information (FTI).\nSignature 3 The parent contributor9s FSA ID (username and password) will serve as their signature on the online\nFAFSA. Paper (PDF) FAFSA filers will provide a physical signature on their form.\nFAFSA Submission\nA dependent student with a single parent now has a complete FAFSA ready for submission. A dependent student with\nmarried parents who filed their 2023 tax return jointly with their current spouse will need to provide the parent9s spouse9s\nidentity and contact information. If all required information is provided and the FAFSA form is submitted, the student will\nreceive an email confirmation. The parent will see an abbreviated confirmation, letting them know that the form is\ncomplete and that the student has been notified. Applicants who provide an email address will receive email notification\nwhen their form is processed with instructions to access their FAFSA Submission Summary. Students who do not provide\nan email address will receive a paper copy of their FAFSA Submission Summary.\nContributor: Parent Spouse or Partner\nThis section consists of five questions related to the spouse or partner of a parent of a dependent student. If the student9s\nparent is married, the spouse9s information is always required on the FAFSA form. If the student9s parent is unmarried and\nliving with a partner, the partner9s information is only required on the FAFSA form if the partner is also the student9s legal\nparent.\nThe parent spouse or partner is only a required contributor on the FAFSA form if the parent is either (1) married or\nremarried and did not file taxes jointly with their current spouse in 2023, or (2) unmarried and living with the student9s\nother legal parent. If the parent contributor is completing the FAFSA form online and the parent9s spouse is identified as a\nrequired contributor, the parent will be prompted to enter the parent spouse9s or partner9s identity information (name,\nSocial Security number, date of birth, and email address) to invite them to contribute to the student9s FAFSA form. The\nparent spouse or partner will be notified by email that they have been invited to contribute to the student9s FAFSA form.\nThe spouse or partner should use their own StudentAid.gov account username and password to access the student9s\nFAFSA form and complete their portion of the form. If the parent9s spouse is not a required contributor, the parent will\nenter the same identifying information and email address, but the parent9s spouse will not be invited to contribute to the\nstudent9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their parent9s spouse or partner complete the"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 26
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 31
+        }
+      ],
+      "latency": 6.15,
+      "tokens": 2389,
+      "cost": 0.00032,
+      "timestamp": "2025-07-29 16:33:48"
+    },
+    {
+      "prompt_number": 9,
+      "question": "What happens if a parent says they didn’t file a tax return but has foreign income affecting SAI?",
+      "response": "If a parent did not file a U.S. tax return but has foreign income that affects the Student Aid Index (SAI), you may need to manually input their income and tax information. Specifically, the guidance indicates that if the parent earned income in a foreign country but did not file a foreign tax return, or worked for an international organization without filing any tax return, they will need to manually report their income and taxes. This is important because foreign income can impact the SAI and the student's eligibility for federal financial aid, such as Pell Grants.\n\nAdditionally, if the parent did not file any U.S. tax return because they had no income or were not required to file, but they have foreign untaxed income, you should review their situation carefully. You may need to request documentation or convert foreign income into U.S. dollars to accurately assess their financial situation.\n\nIn summary, not filing a U.S. tax return alone does not eliminate the need to consider foreign income if it impacts the student's financial aid eligibility. Proper documentation and possibly manual entry of income are necessary to ensure accurate assessment.",
+      "token_usage": {
+        "completion_tokens": 218,
+        "prompt_tokens": 1184,
+        "total_tokens": 1402
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Received (18)= question for a list of these federal benefits.\nParent Tax Filing Status (37)\nThis question asks if the parent filed (or will file) a 2023 IRS 1040 or 1040-NR. If the answer is <no=, the parent will be\nasked to select one of the following reasons for not filing:\n1. The parent filed or will file a tax return with Puerto Rico or another U.S. territory.\n2. The parent filed or will file a foreign tax return.\n3. The parent either earned income in a foreign country but did not and will not file a foreign tax return, or worked for\nan international organization and was not required to report income on any tax return.\n4. The parent, even though they earned income in the U.S., did not and will not file a U.S. tax return because their\nincome was below the filing threshold.\n5. The parent did not and will not file a U.S. tax return for reasons other than low income.\n6. The parent did not and will not file any tax return because they did not earn any income or they were not required to\nfile under the Internal Revenue Code.\nThe purpose of these questions is to determine if a parent was either (1) required to file a 2023 U.S. federal tax return and\ndid not or (2) has income from a foreign country that must be manually entered on the FAFSA form.\nA dependent student will be automatically eligible for a Maximum Pell Grant if their parent (and parent9s spouse or\npartner) is subject to the U.S. Tax Code but is not required to file a 2023 U.S. federal tax return. The student will be\nassigned an SAI of -1,500 and will not be required to provide any further financial information on the FAFSA form.\nFinally, married parents are asked if they filed their 2023 tax return with their current spouse. Individuals who were\nmarried and filed jointly with the IRS and are no longer married to the spouse on the applicable tax return, or who have\nmarried a different spouse, will be required to manually enter their income and tax information. See the <Joint Return\nFilers Who Are No Longer Married= section in Chapter 4 for additional information on separating tax return and income\ninformation.\nIndividuals who only file foreign tax returns will also be unable to use the FA-DDX since it does not link to foreign tax\nauthorities. They will instead need to manually input their income and tax data by converting foreign currency to U.S.\ndollars and entering the resulting amounts in the comparable fields from U.S. tax returns. See the <Student Tax Filing\nStatus (19)= question for additional information.\nIf the parent indicates they earned income in a foreign country but did not file a foreign tax return, or worked for an\ninternational organization, such as the United Nations, World Bank, or International Monetary Fund (option 3), they will\nneed to manually input their income and tax data, similar to individuals who file foreign tax returns. See <Non-tax filers,\nforeign countries, and international organizations= under <Student Tax Filing Status (19)= for additional guidance.\nIf a parent indicates they did not file a U.S. tax return for reasons other than low income (option 5), you should treat this\nas conflicting information and request documentation to resolve it, which may include requiring the individual to file a tax\nreturn and present sufficient documentation of filing to you.\nIf a parent indicates they did not file any tax return because they did not earn any income (option 6) and their state of\nlegal residence is a foreign country, you must determine if the parent has foreign untaxed income that, when included in\nthe SAI calculation, impacts a student9s Pell Grant eligibility. Comment code 303 on the student9s ISIR should prompt you\nto request additional documentation. If your inquiry into the parents9 financial situation shows that the student might be\neligible for less or no Pell grant funds, you may use PJ to account for the parents9 untaxed income and assets, similar to\nthe action you might take when there is a substantial foreign earned income exclusion on a U.S. tax return that can affect\na student9s Pell eligibility.\nParent 2023 Tax Return Information (38)\nFor U.S. tax filers, much of the information in Question 38 will be transferred directly from the IRS via the FA-DDX."
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 30
+        }
+      ],
+      "latency": 7.38,
+      "tokens": 1402,
+      "cost": 0.000206,
+      "timestamp": "2025-07-29 16:33:54"
+    },
+    {
+      "prompt_number": 10,
+      "question": "How should a student report taxable grants and scholarships on the FAFSA, and what role does IRS Form 1040 Schedule 1 play in this process?",
+      "response": "A student should report taxable grants and scholarships on the FAFSA by entering the amount received that was reported as taxable income on their federal tax return. Specifically, this information is optional and is used to provide an accurate financial picture. If the student had taxable grants, scholarships, or AmeriCorps benefits, they should include only the portion that was reported as taxable income on their 2023 federal tax return.\n\nThe IRS Form 1040 Schedule 1 plays a role in this process because it includes information on additional income and details that are transferred to the FAFSA. Schedule 1 contains data such as taxable grants and scholarships, as well as other income sources not reported directly on the main Form 1040. When completing the FAFSA, if the student files a 2023 federal tax return, the relevant taxable grant and scholarship amounts can be transferred via auto-fill from the IRS data through the FAFSA Data Exchange (FA-DDX). If this information isn't available electronically, the student must manually enter the amount based on their tax return.\n\nIn summary:\n- Report taxable grants and scholarships on the FAFSA based on the taxable amount reported on your 2023 federal tax return.\n- IRS Form 1040 Schedule 1 provides the detailed information used to determine this taxable income, including grants and scholarships, and is typically transferred electronically to the FAFSA or manually entered if needed.",
+      "token_usage": {
+        "completion_tokens": 271,
+        "prompt_tokens": 4019,
+        "total_tokens": 4290
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "wages and business and farm income) only. This may be the same number as your AGI.\nFiscal Year Tax Returns\nFor a fiscal year (rather than calendar year) tax return, the individual should use information from the return that includes\nthe greater length of time in 2023. For example, an individual who files a fiscal year tax return that begins in September\nwould have two tax returns that overlap the 2023 calendar year 3 September 1, 2022, thru August 31, 2023, (FY23) and\nSeptember 1, 2023, thru August 31, 2024, (FY24). Since the FY23 tax return covers 8 months of the 2023 calendar year\nand the FY24 tax return covers 4 months of the 2023 calendar year, the individual should use the FY23 tax return that\nbegins on September 1, 2022, to complete the FAFSA form.\nNote: There are more days in the year between July 1 and December 31 (184 days) than between January 1 and June 30\n(181, or 182 in a leap year). Keep that in mind when determining the length of time attributed to a fiscal year tax return\nthat begins on July 1.\nStudent 2023 Tax Return Information (20)\nFor U.S. tax filers, much of the information in Question 20 will be transferred directly from the IRS via the FA-DDX.\nHowever, as noted previously, there will be instances where manual entry of tax information will be necessary.\nThis information comes directly from the 2023 federal tax return of the student9s (and the student9s spouse, if married\nand filed jointly with their current spouse). Non-tax filers will not be required to provide this information. The first list\nbelow is data elements that will transfer via the FA-DDX, if available. The second list is data elements that the student\nmust enter manually.\nFA-DDX Transferred Data\nFiling status. Single, head of household, married filing jointly, married filing separately, or qualifying surviving\nspouse.\nIncome earned from work. From IRS Form 1040 (or IRS Form 1040-NR): line 1z + Schedule 1: lines 3 + 6.\nTax exempt interest income. From IRS Form 1040: line 2a.\nUntaxed portions of IRA distributions. The filer reports the full amount, including rollovers, of the untaxed\nportion, which is determined from IRS Form 1040: line 4a minus 4b. Rollover amounts are manually entered\nseparately and excluded in the SAI formula calculation.\nUntaxed portions of pensions. The filer reports the full amount, including rollovers, of the untaxed portion, which\nis determined from IRS Form 1040: line 5a minus 5b. Rollover amounts are manually entered separately and\nexcluded in the SAI formula calculation.\nAdjusted gross income. From IRS Form 1040 (or IRS Form 1040-NR): line 11. Amount can be negative.\nIncome tax paid. From IRS Form 1040: line 24\nIRA deductions and payments to self-employed SEP, SIMPLE, and qualified plans. From IRS Form 1040\nSchedule 1: total of lines 16 + 20.\nEducation credits. Includes American Opportunity (AOTC) and Lifetime Learning (LLC) credits. From IRS\nForm 1040: line 29 + IRS Form 1040 Schedule 3: line 3.\nSchedules filed. Did the tax filer file a Schedule A, B, D, E, F, or H?\nNet business profit or loss. From IRS Form 1040 Schedule C: line 31. Amount can be negative.\nManually Entered Data/Manually Provided Tax-Payer Data\nIRA rollover into another IRA or qualified plan. Typically indicated as \"ROLLOVER\" on IRS Form 1040-line 4.\nPension rollover into an IRA or other qualified plan. Typically indicated as \"ROLLOVER\" on IRS Form 1040-line\n5.\nEarned income credit (EIC) received. IRS Form 1040: line 27.\nTaxable grants, scholarships, or AmeriCorps benefits. This question is optional. The student should report only\nthe amount of grants and scholarships received (by the student and the student9s spouse, if applicable) that was\nreported as taxable income on the return. This includes grant and scholarship (not employment) portions of\nfellowships and assistantships, as well as taxable stipends and employer tuition reimbursements. Include AmeriCorps",
+        "reconcile the conflicting information and take appropriate action under the specific program requirements (depending on\nthe outcome, funds may have to be returned).\nSubsequent ISIRs\nYou are generally required to review all subsequent transactions for a student for the entire processing year even if you\nverified an earlier transaction. An exception to this requirement is if a later transaction comes in after the student is no\nlonger enrolled at your institution. Review the SAI, C flag, or verification tracking group for changes. Review new\ncomments or NSLDS information that impacts eligibility for aid. Check any updates or corrections. If the SAI has not\nchanged and there are no changes in the C flag, verification tracking group, or NSLDS information, no action is generally\nrequired. If the SAI does change but it either doesn9t affect the amount and type of aid received or the data elements that\nchanged were already verified, no action is required. But if the SAI changes and the pertinent data elements were not\nverified, then you must investigate. Of course, any time the C flag changes or NSLDS data have been modified, you must\nresolve any conflicts.\nDiscrepant Tax Data\nFinancial aid administrators do not need to be tax experts, but there are some issues that even a layperson with basic tax\nlaw information can evaluate. Because conflicting data often involve such information, FAAs must have a fundamental\nunderstanding of relevant tax issues that can impact the need analysis. You are obligated to know (1) whether a person\nwas required to file a tax return and (2) what the correct filing status for a person should be. The IRS9s online Interactive\nTax Assistant can help with these and other issues by walking the user through a series of questions. IRS Publication 17 is\nalso a useful resource.\nResolution of Conflicting Information\nYou must resolve conflicting information prior to disbursing aid to a student enrolled at your school. Even if the conflict\nconcerns a previous award year, you must still investigate it. You have resolved the matter when you have\ndetermined which data are correct; this might simply be confirming that an earlier determination was the right one. You\nmust document your findings and include an explanation that justifies your decision.\nThe verification page on the FSA Assessments site has guidance to help you review your conflicting information\nprocedures; see Activity 1.\nReferral of Fraud Cases\nRequirement to Verify Questionable Data\n34 CFR 668.54(a)(2)\nDiscrepant Tax Data Example\nAVG, Chapter 5, Example 7: An FAA notices that a dependent student9s parents, who are married and live\ntogether, have each filed as head of household (which offers a greater tax deduction than filing as single or\nmarried). The FAA must ask if that is the right status. Resolution of the conflict could be the parents refiling and\nsubmitting a copy of the amended return or a reasonable explanation of why there is no conflict under IRS rules.",
+        "parent spouse or partner contributor section.\nParent Spouse or Partner Identity Information (42)\nLike the student, the parent spouse or partner identity information should match what appears on their social security\ncard. If the parent spouse or partner does not have a Social Security number and is completing their section of the form\nonline, the SSN field will automatically be blank based on the information in their StudentAid.gov account. If the parent\nspouse is completing their section using the paper (PDF) FAFSA, they should enter all zeros in the SSN field. In both\napplication methods, the parent should enter their ITIN, if they have one, in the ITIN field.\nParent Spouse or Partner Contact Information (43)\nThis is the parent spouse9s or partner9s current mobile phone, email address, and permanent home address.\nParent Spouse or Partner Tax Filing Status (44)\nThis question asks if the parent spouse or partner filed (or will file) a 2023 IRS 1040 or 1040-NR. It also asks about income\nearned in a foreign country or if the parent spouse or partner filed a tax return in a U.S. territory. See the discussion of tax\nreturn data in the <Student 2023 Tax Return Information (20)= question for a list of data elements that will transfer via the\nFA-DDX or be manually entered by the parent spouse or partner.\nParent Spouse or Partner 2023 Tax Return Information (45)\nThis information comes directly from the parent spouse9s or partner9s 2023 federal tax return. See the discussion of tax\nreturn data in the <Student 2023 Tax Return Information (20)= question for a list of data elements that will transfer via the\nFA-DDX or be manually entered by the parent spouse or partner. Unlike the parent, the parent spouse or partner will not\nbe asked to report either (1) taxable college grants, scholarships, or AmeriCorps benefits, or (2) receipt of the earned\nincome credit. See <Student Spouse 2023 Tax Return Information (28)= for further explanation of these two excluded\nelements.\nParent Spouse or Partner Consent, Approval, and Signature (46)\nEvery parent spouse or partner contributor must provide the following for the student to be eligible for Title IV aid:\nConsent 3 The parent spouse or partner contributor must consent to the disclosure of certain identifying information\nto the IRS.\nApproval 3 The parent spouse or partner must affirmatively approve that the U.S. Department of Education may\nreceive, use, and redisclose to certain entities their federal tax information (FTI).\nSignature 3 The parent spouse or partner contributor9s FSA ID (username and password) will serve as their\nsignature on the online FAFSA. Paper (PDF) FAFSA filers will provide a physical signature on their form.\nFAFSA Submission\nA dependent student with (1) unmarried parents living together or (2) a married or remarried parent who did not file their\n2023 tax return jointly with their current spouse now have a complete FAFSA form ready for processing. The student will\nreceive an email confirmation that their FAFSA form is complete. The parent spouse or partner will see an abbreviated\nconfirmation that the form is complete, and that the student has been notified. If the applicant provided an email address,\nthey will receive an email when the FAFSA form is processed with instructions for accessing their FAFSA Submission\nSummary. Applicants without an email address will receive a paper copy of their FAFSA Submission Summary.\nRole: Preparer\nIf someone other than the student, student spouse, parent, or parent spouse or partner completed a portion of the FAFSA\nform on the applicant9s behalf, that person must complete the Preparer section. Paid preparers are prohibited. This\nsection consists of three questions related to the unpaid preparer.",
+        "The ISIR will only display the federal school code of the receiving school. The information of other schools the student\nincluded on the FAFSA form will not appear except on the FAFSA Submission Summary and on ISIRs sent to state grant\nagencies. See Volume 6 of the 2025-26 FAFSA Specification Guide.\nStudent Consent, Approval, and Signature (24)\nEvery student must provide the following to be eligible for Title IV aid:\nConsent 3 The student must consent to the disclosure of certain identifying information to the IRS.\nApproval 3 The student must affirmatively approve that the U.S. Department of Education may receive, use, and\nredisclose to certain entities their federal tax information (FTI).\nSignature 3 The student9s FSA ID (account username and password) will serve as their signature on the online\nFAFSA form. Paper (PDF) FAFSA form filers will provide a physical signature on their form.\nIn addition to certifying that the data on the FAFSA form is correct, the student is also signing a statement of educational\npurpose, which is required to receive Title IV funds. Among other things, the student agrees to spend Title IV funds only\non educational expenses and affirms that they are not in default on a federal loan and do not owe a grant overpayment.\nFAFSA Submission\nStudents who do not have any other required contributors now have a complete FAFSA form. Students who complete and\nsubmit their FAFSA form online will receive an email version of their confirmation page. When the applicant9s FAFSA form\nis processed, students who provided an email address will receive an email notification of processing with instructions to\naccess their FAFSA Submission Summary. Students who do not provide an email address will receive a paper copy of their\nFAFSA Submission Summary. Applicants with additional required contributors will need these individuals to contribute to\ntheir FAFSA form, as described next.\nContributor: Student Spouse\nThis section consists of five questions related to the student9s spouse. The student9s spouse is a required contributor on\nthe FAFSA form if the student is married and did not file a 2023 tax return jointly with their current spouse.\nIf a married student is completing the FAFSA form online and the student9s spouse is identified as a required contributor,\nthe student will be prompted to enter their spouse9s identity information (name, Social Security number, date of birth, and\nemail address) to invite them to contribute to their FAFSA form. The student spouse will be notified by email that they\nhave been invited to contribute to the student9s FAFSA form. The spouse should use their own StudentAid.gov account\nusername and password to access the student9s FAFSA form and complete their portion of the form. If the student9s\nspouse is not a required contributor, the student will enter the same identifying information and email address, but the\nstudent9s spouse will not be invited to contribute to the student9s FAFSA form.\nIf the student is completing the paper (PDF) FAFSA form, they will have their spouse complete the student spouse\ncontributor section.\nStudent Spouse Identity Information (25)\nLike the student, the student spouse identity information should match what appears on their social security card. If the\nstudent spouse does not have a Social Security number and is completing their section of the form online, the SSN field\nwill be blank, based on their StudentAid.gov account information. If they are completing their section on the paper (PDF)\nFAFSA, they should enter all zeros in the SSN field. In both application methods, the student spouse should enter their\nITIN, if they have one, in the ITIN field.\nStudent Spouse Contact Information (26)\nThis is the student spouse9s current mobile phone, email address, and permanent home address.\nStudent Spouse Tax Filing Status (27)"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 22
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 74
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 32
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 26
+        }
+      ],
+      "latency": 8.61,
+      "tokens": 4290,
+      "cost": 0.00051,
+      "timestamp": "2025-07-29 16:34:02"
+    },
+    {
+      "prompt_number": 11,
+      "question": "How does the FUTURE Act Direct Data Exchange (FA-DDX) streamline the FAFSA application process by utilizing the Internal Revenue Service, and what role does the Internal Revenue Code play in this process?",
+      "response": "The FUTURE Act Direct Data Exchange (FA-DDX) streamlines the FAFSA application process by allowing the Department of Education to directly obtain and use certain federal tax information (FTI) from the Internal Revenue Service (IRS). This is accomplished through a secure connection established via an application programming interface (API) between the IRS and the Federal Student Aid (FSA) programs. When applicants and their contributors provide consent and approval, the IRS can share relevant tax data in near real-time. This process replaces the older IRS Data Retrieval Tool (IRS-DRT) and makes income and tax verification faster, easier, and more secure.\n\nThe role of the Internal Revenue Code (IRC) in this process is crucial because the FUTURE Act amended Section 6103 of the IRC to authorize and mandate the IRS's disclosure of specific tax information directly to the Department of Education. This legal authority ensures that the IRS can share the necessary tax data with the FSA for the purpose of determining federal financial aid eligibility, thereby reducing the need for applicants to self-report income and tax details, and ensuring the verification process is based on verified federal tax data.\n\nIn summary, the FA-DDX leverages the legal authority granted by the amended IRC to facilitate direct, secure, and verified exchange of tax information between the IRS and the Department of Education, thus significantly streamlining the FAFSA application process.",
+      "token_usage": {
+        "completion_tokens": 274,
+        "prompt_tokens": 3033,
+        "total_tokens": 3307
+      },
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "retrieved_contexts": [
+        "Chapter 2\nFilling Out the FAFSA Form\nThis chapter describes the 2025-26 FAFSA form. While the chapter follows the organization of the paper (PDF) FAFSA form\nand the ISIR, the guidance applies equally to the online FAFSA. To see how FAFSA data are used to calculate the Student\nAid Index (SAI), refer to Chapter 3.\nThe easiest, fastest, and most accurate way to complete a FAFSA form is using the online application and providing\nconsent and approval for the access, disclosure, and use of federal tax information (FTI). The online FAFSA form provides\nrobust instructions for completing the form. It also provides a clear path for the student and each contributor, allowing\nthem to skip (or never see) questions that are unnecessary, irrelevant, or already known based on information previously\nprovided or imported. However, some applicants will be unable or unwilling to complete the FAFSA form online and have\nthe option to complete a paper version of the form.\nFUTURE Act Direct Data Exchange (FA-DDX)\nThe FUTURE Act amended Section 6103 of the Internal Revenue Code (IRC) to allow the Internal Revenue Service (IRS) to\ndisclose certain FTI to FSA. The IRS and FSA worked together to develop the FUTURE Act Direct Data Exchange (FA-DDX)\nwhich established a secure connection between both agencies through an application programming interface that\nprocesses requests in near-real time. The FA-DDX replaced the IRS Data Retrieval Tool (IRS-DRT) to import certain FTI into\nan applicant9s FAFSA form.\nConsent and Approval\nThe student and each contributor to the FAFSA form must provide consent and approval to the access, disclosure, and use\nof FTI in evaluating the applicant9s eligibility for Title IV aid. Consent and approval are required regardless of the\napplication method (online or paper).\nTo provide consent and approval, FAFSA contributors (including parent(s) or spouse) must agree to:\n1. The Department9s use and disclosure of their information (e.g., name and Social Security number) to match with the\nIRS;\nDefinitions\nFAFSA Privacy Act Consent 3 Formal consent provided by an applicant and any applicable contributor(s) for a\ngiven FAFSA cycle (e.g., December 2024 to September 2026 for the 2025-26 FAFSA form) that meets the\nstatutory requirements of collecting and using an individual9s personally-identifiable information (PII) under the\nPrivacy Act, as amended (5 U.S.C. § 552a). PII provided on the FAFSA form (e.g., name, date of birth, Social\nSecurity number) with consent of the individual, will be provided to the IRS to conduct a match for the\nDepartment to receive FTI for purposes of determining an applicant9s federal financial aid eligibility and permit\nfurther redisclosure of FTI by the Department.\nFAFSA FTI Approval 3 Formal approval granted by an applicant and any applicable contributors for a given\nFAFSA cycle (e.g., December 2024 to September 2026 for the 2025-26 FAFSA form) to retrieve and use FTI to\ndetermine an applicant9s federal financial aid eligibility as well as permit the redisclosure of FTI by the\nDepartment to an eligible institution; state higher education agency; or a designated scholarship organization for\nthe application, award, and administration of student aid programs. An applicant and contributor (if applicable)\nmust provide approval once each year. If FAFSA FTI approval is not provided, the student will not be eligible for\nany Title IV aid until the approval is provided by each contributor.",
+        "Application and Verification Guide\nIntroduction\nThis guide is intended for college financial aid administrators and counselors who help students with the financial aid\nprocess4completing the Free Application for Federal Student Aid (FAFSA®) form, verifying information, and making\ncorrections and other changes to the information reported on the FAFSA form.\nThroughout the Federal Student Aid Handbook, we use <college,= <school,= and <institution= interchangeably unless a\nmore specific use is given. Similarly, <student,= <applicant,= and <aid recipient= are synonyms. <Parents= in this volume\nrefers to the legal parents of dependent students, and <you= refers to the primary audience of the Handbook: financial aid\nadministrators at colleges. <We= indicates the U.S. Department of Education (the Department, ED), and <federal student\naid= and <Title IV aid= are synonymous terms for the financial aid offered by the Department.\nWe appreciate any comments that you have on the Application and Verification Guide (AVG), as well as all the volumes of\nthe FSA Handbook. We revise the text based on questions and feedback from the financial aid community, so please\nreach out to us about how to improve the FSA Handbook through the <Contact Customer Support= feature in our Partner\nConnect Help Center clicking on <FSA Handbook= under the Topic section.\nFAFSA Simplification Act\nThe FAFSA Simplification Act, passed on Dec. 27, 2020, as part of the Consolidated Appropriations Act, 2021, mandated a\nsignificant overhaul of federal student aid, including the Free Application for Federal Student Aid (FAFSA®) form, need\nanalysis, and many policies and procedures for schools that participate in the Title IV programs. FSA implemented the\nFAFSA Simplification Act alongside the FAFSA portion of the Fostering Undergraduate Talent by Unlocking Resources for\nEducation (FUTURE) Act to streamline the FAFSA application process.\nChanges From the FUTURE Act\nThe Fostering Undergraduate Talent by Unlocking Resources for Education (FUTURE) Act authorized a direct data\nexchange 3 the FUTURE Act Direct Data Exchange (FA-DDX) 3 with the Internal Revenue Service (IRS) to facilitate\ncompleting the FAFSA form. The previous tool to transfer U.S. income and tax information from the IRS 3 the IRS Data\nRetrieval Tool (DRT) 3 was retired after the close of the 2023-24 application cycle. Implementation of the FA-DDX\neliminated the need for most applicants (and their spouse or parents) to self-report their income and tax information\nreported to the IRS. Also, federal tax information (FTI) that is transferred via the FA-DDX to the FAFSA form is considered\nverified for Title IV purposes.\nUnlike with the IRS-DRT, which allowed applicants to opt in, the FA-DDX requires applicants and contributors (student9s\nspouse and/or parents, as appropriate) to provide consent and approval for the Department to obtain FTI from the IRS via\nthe FA-DDX and use it to determine the student9s eligibility for federal student aid.\nOther Changes\nThroughout the AVG, all dates, pertinent tax return and schedule information, along with various resources and references\nhave been updated to support the requirements associated with the 2025-26 processing year and the 2023 base tax year.\nWhere appropriate, links and publications associated with FSA9s Partner Connect and Knowledge Center have been\nproperly updated. We also removed references to COVID-19 guidance and waivers.\nSome sections were moved to better align topics and assist with narrative flow. Use the search feature to find sections\nthat may have been relocated. The following describes changes made in each chapter.\nChapter 1: The Application Process\nWe removed the <Returning FAFSA Filers= section as FAFSA renewal functionality has been deferred for future cycles.",
+        "Verification Following Disasters\nThe Dear Colleague Letter GEN-17-08 gives general guidance for awarding aid in federally declared disasters. It states\nthat the Secretary will not enforce the verification requirements during the award year for applicants whose records were\nlost or destroyed because of a disaster if the school has tried to preserve and reconstruct any records. The school must\ndocument when it does not perform verification for this reason and use status code <S= when reporting the disbursement\nof Pell Grants to affected students. Also, the requirement for dependent students to submit a statement signed by a\nparent regarding family size is waived if the parents cannot provide the signature due to the disaster. The school must\nnote why no parent was able to provide the statement.\nSchools that experience a local disaster (rather than a federally declared one) that affects Title IV administration should\nconsult their regional school participation division.\nAcceptable Documentation\nThe FAFSA Simplification Act requires that, wherever possible, the Department use data received directly from the IRS to\ncalculate a student9s SAI and Pell Grant award. The Fostering Undergraduate Talent by Unlocking Resources for Education\nAct (FUTURE Act) requires the Department of Education to access tax information held by the IRS pertaining to FAFSA\napplicants4and, where applicable, their parents and spouses4through a secure method: the FUTURE Act Direct Data\nExchange (FA-DDX). The FUTURE Act amended the Internal Revenue Code (IRC) to mandate the disclosure of FTI directly\nfrom the IRS to the Department with an individual9s consent and approval. The FUTURE Act also made providing consent\nand approval for the exchange of FTI a requirement for receiving federal student aid.\nApplicants and contributors will be required to provide consent and approval to retrieve FTI directly from the IRS. When\nFTI is received from the IRS via the FA-DDX, the FTI received is considered verified and no additional documentation is\nnecessary. As a result, the FA-DDX is the fastest, easiest, and most secure method of meeting income and tax verification\nrequirements. The September 4, 2024 Federal Register Notice gives the documentation required for verifying 2025-26\napplication data, which depends on the item verified, as explained in this section.\nIf you use a verification document, be sure that it is signed, that all required sections are completed, and that any\nrelevant tax or alternative documents are attached. Copies of original documents are acceptable. An original signature on\nan original document, an original signature on a copy of a document, and a copy of a document with an original signature\non it are all valid signatures, unless specifically noted in this chapter. If a copy of the tax return is used, the filer (or at\nleast one of the filers of a joint return) must sign it or the tax preparer must provide their name and SSN, EIN, or PTIN.\nSuggested Verification Text\nThe Department has developed suggested text that you may use to create a verification document and to verify non-tax\nitems, such as family size. To review the suggested text for 2025-26, please see Dear Colleague Letter GEN-24-10. The\nsuggested text fulfills verification requirements, but schools do not have to use it, except as noted below. Instead, they\nmay develop and use their own (or someone else9s) text, forms, documents, statements, and certifications that are\nspecific to the items required to be verified for a particular student or group of students at the school. However, schools\nthey tried to locate their estranged spouse. The school determines that the student doesn9t need to verify their\nspouse9s tax and income information. However, the student must still verify their own information. The school\nmay also choose to use professional judgment to remove the spouse9s information from the student9s FAFSA form.\nVerification Exclusions\n34 CFR 668.54(b)"
+      ],
+      "retrieved_metadata": [
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 8
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 0
+        },
+        {
+          "producer": "GPL Ghostscript 10.00.0",
+          "creator": "wkhtmltopdf 0.12.6",
+          "creationdate": "D:20241217172423Z00'00'",
+          "source": "data/Applications_and_Verification_Guide.pdf",
+          "file_path": "data/Applications_and_Verification_Guide.pdf",
+          "total_pages": 76,
+          "format": "PDF 1.7",
+          "title": "",
+          "author": "",
+          "subject": "",
+          "keywords": "",
+          "moddate": "D:20241217172423Z00'00'",
+          "trapped": "",
+          "modDate": "D:20241217172423Z00'00'",
+          "creationDate": "D:20241217172423Z00'00'",
+          "page": 48
+        }
+      ],
+      "latency": 8.81,
+      "tokens": 3307,
+      "cost": 0.000413,
+      "timestamp": "2025-07-29 16:34:10"
+    }
+  ]
+}
