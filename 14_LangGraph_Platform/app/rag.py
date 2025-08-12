@@ -123,5 +123,3 @@ def retrieve_information(
     if isinstance(result, dict) and "response" in result:
         return result["response"]
     return result
-
-

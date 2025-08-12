@@ -53,10 +53,61 @@ Run the repository and complete the following:
 
 What is the purpose of the `chunk_overlap` parameter when using `RecursiveCharacterTextSplitter` to prepare documents for RAG, and what trade-offs arise as you increase or decrease its value?
 
+##### ✅ Answer:
+### Purpose of `chunk_overlap` in `RecursiveCharacterTextSplitter`
+
+**Purpose:**  
+Ensures adjacent chunks share some text so facts that cross boundaries appear together, improving retrieval recall in RAG.
+
+**Trade-offs:**
+
+| Overlap ↑ | Pros | Cons |
+|-----------|------|------|
+| Higher    | Better recall; fewer missed facts at boundaries | More tokens → higher cost & latency; duplicate content bias |
+| Lower     | Lower cost/latency; more diverse retrieved chunks | Risk of splitting key facts; lower boundary recall |
+
+**Rule of Thumb:**  
+Use 10–20% of `chunk_size` as overlap (e.g., `chunk_size=600`, `chunk_overlap=60–120`) and tune based on evaluation metrics (e.g., ContextRecall vs. cost).
+
 #### ❓ Question:
 
 Your retriever is configured with `search_kwargs={"k": 5}`. How would adjusting `k` likely affect RAGAS metrics such as Context Precision and Context Recall in practice, and why?
 
+##### ✅ Answer:
+
+### Effect of `k` on RAGAS Metrics
+
+**`k` = number of chunks retrieved per query.**
+
+| k Change | Likely Effect on RAGAS Metrics | Reason |
+|----------|--------------------------------|--------|
+| Increase | **Context Recall ↑** (more relevant chunks retrieved), **Context Precision ↓** (more irrelevant chunks included) | Larger pool raises chance of including all needed evidence, but also more noise |
+| Decrease | **Context Precision ↑** (fewer irrelevant chunks), **Context Recall ↓** (higher risk of missing evidence) | Smaller pool keeps only the most relevant chunks, but may drop key boundary facts |
+
+**Trade-off:**  
+- High `k` → better completeness, worse precision.  
+- Low `k` → better precision, worse completeness.  
+
+**Tip:**  
+Tune `k` alongside chunk size/overlap and use evaluation to find the sweet spot for your task.
+
 #### ❓ Question:
 
 Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
+
+##### ✅ Answer:
+
+### `agent` vs `agent_helpful` (from `langgraph.json`)
+- **agent →** uses `simple_agent` graph (tool calls or end).
+- **agent_helpful →** uses `agent_with_helpfulness` graph (adds a post-response helpfulness check).
+
+### Where the helpfulness evaluator sits
+- After the **agent** model runs, if there are **no tool calls**, route to **`helpfulness`** node; otherwise go to **`action`** (ToolNode).
+- Edges: `agent → action|helpfulness`; then `helpfulness → (continue|end)`.
+
+### When to loop back vs. terminate
+- The helpfulness node emits `HELPFULNESS:Y` or `HELPFULNESS:N` (and guards with a loop-limit `HELPFULNESS:END`).
+- **If `Y` → terminate**; **if `N` → route back to `agent`**; **if `END` → terminate**.
+
+### Contrast with the simple agent
+- Simple agent: if the last message has **tool calls → `action`**; else **END** (no helpfulness check).
