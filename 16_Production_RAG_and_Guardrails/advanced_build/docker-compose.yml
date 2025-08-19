@@ -1,0 +1,59 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: session16_advanced_build
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4.1-nano}
+      - DATA_DIR=/data
+      - QDRANT_URL=http://qdrant:6333
+      - CACHE_DB_PATH=/app/cache/e2e_cache.sqlite
+      - CACHE_NAMESPACE=demo
+      - CACHE_SIM_THRESHOLD=0.85
+      - DEBUG_CACHE=false
+      - CHUNK_SIZE=500
+      - CHUNK_OVERLAP=50
+      - EMBED_MODEL=text-embedding-3-small
+      - LLM_CACHE_TYPE=sqlite
+    depends_on:
+      - qdrant
+    command: >
+      sh -c "sleep 5 &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8080"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+      - app_cache:/app/cache
+  streamlit:
+    image: python:3.11-slim
+    container_name: streamlit_demo
+    working_dir: /streamlit
+    environment:
+      BACKEND_URL: http://app:8080        # inside the compose network, FastAPI service name is "app"
+      E2E_DB_PATH: /cache/e2e_cache.sqlite
+    command: >
+      sh -c "pip install --no-cache-dir -r /streamlit/requirements.txt &&
+             streamlit run /streamlit/streamlit_app.py
+             --server.address 0.0.0.0 --server.port 8501"
+    ports:
+      - "8501:8501"
+    depends_on:
+      - app
+    volumes:
+      - ./streamlit:/streamlit:ro
+      - app_cache:/cache:ro
+
+volumes:
+  qdrant_storage:
+  app_cache:
