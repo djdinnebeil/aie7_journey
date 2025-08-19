@@ -59,26 +59,17 @@ st.sidebar.header("Cache Settings")
 backend_url = st.sidebar.text_input("Backend URL", value=DEFAULT_BACKEND, help="FastAPI base URL")
 
 # Unified cache toggle
-use_cache = st.sidebar.checkbox("Enable Unified Cache", value=True, help="Combines E2E exact matching with semantic similarity fallback")
+use_cache = st.sidebar.checkbox("Enable Unified Cache", value=True, help="Enables the unified semantic E2E caching system")
 
-# Cache type presets (for backward compatibility)
+# Cache strategy
 cache_preset = st.sidebar.selectbox(
     "Cache Strategy",
-    ["unified", "e2e_only", "semantic_only", "disabled"],
-    help="Cache strategy presets"
+    ["enabled", "disabled"],
+    help="Enable or disable the unified semantic E2E cache"
 )
 
 # Update use_cache based on preset
-if cache_preset == "disabled":
-    use_cache = False
-elif cache_preset == "e2e_only":
-    use_cache = True
-    # Will be handled in the request logic
-elif cache_preset == "semantic_only":
-    use_cache = True
-    # Will be handled in the request logic
-else:  # unified
-    use_cache = True
+use_cache = cache_preset == "enabled"
 
 # Similarity threshold
 sim_threshold = st.sidebar.slider(
@@ -157,9 +148,8 @@ st.sidebar.caption(f"Top-K setting: **{top_k}**")
 st.sidebar.markdown("---")
 st.sidebar.subheader("Cache Management")
 
-# Cache management buttons
-col1, col2 = st.sidebar.columns(2)
-if col1.button("Clear All Caches", key="clear_all_caches"):
+# Cache management
+if st.sidebar.button("Clear All Caches", key="clear_all_caches"):
     try:
         response = requests.post(f"{backend_url.rstrip('/')}/clear_cache")
         if response.status_code == 200:
@@ -170,40 +160,6 @@ if col1.button("Clear All Caches", key="clear_all_caches"):
     except Exception as e:
         st.error(f"Error: {e}")
 
-if col2.button("Get Cache Stats", key="get_cache_stats"):
-    try:
-        response = requests.get(f"{backend_url.rstrip('/')}/cache_stats")
-        if response.status_code == 200:
-            stats_data = response.json()
-            st.sidebar.json(stats_data)
-        else:
-            st.sidebar.error("Failed to get cache stats")
-    except Exception as e:
-        st.sidebar.error(f"Error: {e}")
-
-# Additional cache management options
-if st.sidebar.button("Clear E2E Cache", key="clear_e2e_cache"):
-    try:
-        response = requests.post(f"{backend_url.rstrip('/')}/clear_e2e_cache")
-        if response.status_code == 200:
-            st.success("E2E cache cleared!")
-            st.rerun()
-        else:
-            st.error("Failed to clear E2E cache")
-    except Exception as e:
-        st.error(f"Error: {e}")
-
-if st.sidebar.button("Clear Semantic Cache", key="clear_semantic_cache"):
-    try:
-        response = requests.post(f"{backend_url.rstrip('/')}/clear_semantic_cache")
-        if response.status_code == 200:
-            st.success("Semantic cache cleared!")
-            st.rerun()
-        else:
-            st.error("Failed to clear semantic cache")
-    except Exception as e:
-        st.error(f"Error: {e}")
-
 st.sidebar.markdown("---")
 if st.sidebar.button("Reset Session Stats"):
     st.session_state.stats = {"miss": 0, "hit": 0, "total": 0}
@@ -211,7 +167,7 @@ if st.sidebar.button("Reset Session Stats"):
 
 # ---------- Main UI ----------
 st.title("Advanced LLM Caching Demo")
-st.caption("Unified Cache: E2E exact matching + Semantic similarity fallback. Powered by `/ask` in your FastAPI app.")
+st.caption("Unified Semantic E2E Cache: Intelligent caching with exact matching and semantic similarity. Powered by `/ask` in your FastAPI app.")
 
 col1, col2 = st.columns([2, 1], gap="large")
 with col1:
@@ -219,23 +175,9 @@ with col1:
     if "question" not in st.session_state:
         st.session_state.question = q_default
     question = st.text_input("Question", value=st.session_state.question, placeholder="Ask about the PDF…")
-    c1, c2, c3 = st.columns([1, 1, 1])
-    if c1.button("Ask"):
+    if st.button("Ask"):
         st.session_state.go = True
         st.session_state.preset_mode = None
-    e2e_only = c2.button("E2E only")
-    sem_only = c3.button("Semantic only")
-
-    # Quick presets that do one-off requests with explicit toggles:
-    preset_mode = None
-    if e2e_only:
-        st.session_state.go = True
-        st.session_state.preset_mode = "e2e"
-        st.rerun()
-    elif sem_only:
-        st.session_state.go = True
-        st.session_state.preset_mode = "semantic"
-        st.rerun()
 
 with col2:
     # Create empty containers for initial metrics
@@ -257,7 +199,7 @@ ctx_box = st.container()
 insight = st.container()
 chart = st.container()
 st.markdown("---")
-st.subheader("Unified Cache Browser — Recent Entries")
+st.subheader("Cache Browser — Recent Entries")
 
 # ---------- Make request ----------
 go = st.session_state.get("go", False)
@@ -274,16 +216,7 @@ if go and question.strip():
     if ttl_seconds > 0:
         payload["ttl_seconds"] = int(ttl_seconds)
 
-    # Handle preset modes for backward compatibility
-    preset_mode = st.session_state.get("preset_mode")
-    if preset_mode == "e2e":
-        # For E2E only, we still use unified cache but can optimize
-        payload["use_cache"] = True
-        # The unified cache will try E2E first, which is what we want
-    elif preset_mode == "semantic":
-        # For semantic only, we still use unified cache but can optimize
-        payload["use_cache"] = True
-        # The unified cache will fall back to semantic if E2E misses
+
 
     url = f"{backend_url.rstrip('/')}/ask"
     t0 = time.time()
@@ -396,10 +329,10 @@ if go and question.strip():
 
             right_text = (
                 f"- final cache result: **{cache_str}**\n"
-                "- unified cache strategy: E2E first, semantic fallback\n"
+                "- unified cache strategy: Intelligent semantic E2E caching\n"
                 "  *(similarity threshold & context overlap enforced server-side)*\n"
-                "- E2E store: SQLite at `/app/cache/e2e_cache.sqlite`\n"
-                "- Semantic store: Qdrant collection `llm_cache_<namespace>`"
+                "- Cache store: SQLite at `/app/cache/e2e_cache.sqlite`\n"
+                "- Semantic search: Qdrant collection `llm_cache_<namespace>`"
             )
             right.write(right_text)
 
@@ -417,11 +350,9 @@ if go and question.strip():
         hits_metric.metric("Cache hits", stats["hit"])
         misses_metric.metric("Cache misses", stats["miss"])
         
-        # Clear preset flags after processing
+        # Clear request flag after processing
         if "go" in st.session_state:
             del st.session_state.go
-        if "preset_mode" in st.session_state:
-            del st.session_state.preset_mode
 
 
 # ---------- Unified Cache Browser (enriched) ----------
@@ -451,9 +382,9 @@ if E2E_DB_PATH.exists():
         df["expires_at"] = pd.to_datetime(df["expires_at"], unit="s", utc=True)
         st.dataframe(df, use_container_width=True, hide_index=True)
     except Exception as e:
-        st.warning(f"Could not read unified cache: {e}")
+        st.warning(f"Could not read cache: {e}")
 else:
-    st.info("No unified cache file found yet (run at least one request).")
+    st.info("No cache file found yet (run at least one request).")
 
 # ---------- Optional: Qdrant stats ----------
 if QDRANT_URL:
